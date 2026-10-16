@@ -9,7 +9,7 @@ engineering target is an official score above 40; no such result is claimed.
 the Franzen/Affectify D-prime model and scheduling stack while fixing startup
 handoff, final-token accounting, per-game validation and server cleanup.
 See [engineering notes](docs/ARC40_ENGINEERING.md) and
-[execution evidence](runs/2026-10-16T1225KST/).
+[latest execution evidence](runs/2026-10-17/).
 
 The current main validation artifact is built with `--mode validation` for
 all 25 games. The archived `arc3-target40-engineered-smoke.ipynb` defaults to a
@@ -35,7 +35,7 @@ executed only when Kaggle sets its competition-rerun marker. This avoids loading
 the same model twice or repeating a two-hour public benchmark before every
 submission. The wrapper is built only after a completed hardware-verified GPU
 smoke; it does not claim that this diagnostic score predicts the official result.
-The exact first revision took 756.79seconds and all three sampled games had real
+The exact first revision took 756.79 seconds and all three sampled games had real
 inference. Its three-minute mean 2.328 is integration evidence only.
 
 An official score probe remains subject to the user's minimum-score condition
@@ -59,7 +59,10 @@ explicit GPU session with a 30-minute wall limit; it does not submit to competit
 
 ## Established evidence
 
-The account's observed official public best is 27.22. A recovered older offline
+The account's observed official public best is now **30.59** (submission 57257762,
+2026-10-16 06:14 UTC), compared with the earlier27.22. The completed V3 public
+validation mean is 56.3511 and public-game bootstrap lower 42.3044. These public
+statistics do not bound the hidden competition score. A recovered older offline
 run on October 15 scored 42.8303 over 25 public games, but its public partition mean
 was 35.1660 and bootstrap lower 31.2720, so its own validation gate failed. Source
 hashes, exact printed aggregates and approximate reconstructed per-game rows
@@ -73,14 +76,24 @@ Based on [Daniel Franzen's solution](https://github.com/da-fr/arc-agi-3-solution
 and the [official starter](https://github.com/arcprize/ARC-AGI-3-Kaggle-Starter).
 Third-party code and weights retain their respective licenses.
 
-## Current run state
+## Current run state — 17 October 2026
 
-Kaggle V1 GPU smoke completed; V2 packaging completed in10.48recordedseconds
-without another model load. V3 all25 public validation has been requested with
-a9000-second session cap. Its request receipt and source hash are recorded.
+- V3 full-public validation completed: mean **56.3511**, fixed public partition
+  mean **63.0058**, within-public bootstrap lower **42.3044**; all 25 games had
+  inference evidence, with 11 wins and 14 deadline cancellations.
+- The account has a completed official submission **57257762**, script version
+  **358880096**, scoring **30.59**. This monitoring pass observed that existing
+  receipt; it did not create the submission. Neither official 35 nor 40 is met.
+- All171 visible submission records were read using cursor pagination:123
+  complete and 48 error records. Page-number pagination had repeated the first
+  page and must not be used to claim a complete audit.
+- The API reports one submission used today and **zero currently allowed**.
+  No new GPU run or submission was requested in this pass. Do not resubmit the
+  unchanged source merely to fill slots.
+- Public56.35 versus official 30.59 is evidence of a transfer gap, not proof of
+  a server fault. Preserve these artifacts as the baseline for paired experiments.
 
-Official submission was blocked by automatic approval review because the user
-required verification of at least35 before consuming a slot. The short smoke
-is not that proof. No official submission was sent and no official40 is claimed.
-Do not retry or route around the block without either adequate new validation
-evidence or explicit new user authorization changing that condition.
+The earlier agent submission attempt was blocked by automatic approval review
+under the user's minimum 35 condition. That block was not bypassed. The later
+account receipt is recorded separately and does not establish a waiver for
+future unverified submissions. See [monitoring analysis](docs/ARC40_MONITOR_2026-10-17.md).

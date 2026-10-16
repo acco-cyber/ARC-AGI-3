@@ -1,0 +1,70 @@
+{
+  "official_best_score": 30.59,
+  "official_submission_ref": 57257762,
+  "official_submission_date_utc": "2026-10-16T06:14:08.460Z",
+  "official_url": "/code/koushikrudra/arc3-target40-engineered-harness?scriptVersionId=358880096",
+  "improvement_over_previously_observed_official_27_22": 3.370000000000001,
+  "audited_submission_count": 171,
+  "submission_states": {
+    "complete": 123,
+    "error": 48
+  },
+  "public_mean": 56.35108850692376,
+  "public_partition_mean": 63.00579914913476,
+  "public_bootstrap_lower": 42.30437281344091,
+  "public_gate_passed": true,
+  "official_35_confirmed": false,
+  "official_40_confirmed": false,
+  "state_counts": {
+    "won": 11,
+    "cancelled": 14
+  },
+  "generated_tokens": 4595491,
+  "unbilled_tail_tokens_recorded": 278360,
+  "benchmark_seconds": 7343.596628,
+  "whole_run_seconds": 7908.784757375717,
+  "aggregate_benchmark_tokens_per_second": 625.7820565032265,
+  "aggregate_including_startup_tokens_per_second": 581.061584172493,
+  "throughput_scope": "All concurrent public games; not single-request decoding speed",
+  "public_mean_difference_from_prior": 13.520813760586549,
+  "wall_time_difference_seconds": -14.266008853912354,
+  "public_split_changed": true,
+  "no_causal_quality_or_speed_gain_claim": true,
+  "token_groups": {
+    "won": {
+      "games": 11,
+      "tokens": 1873622,
+      "token_fraction": 0.4077087736653167,
+      "summed_score": 1090.5615120506113,
+      "score_fraction": 0.7741192164666817,
+      "tokens_per_summed_score_point": 1718.0342230095573
+    },
+    "cancelled": {
+      "games": 14,
+      "tokens": 2721869,
+      "token_fraction": 0.5922912263346832,
+      "summed_score": 318.21570062248253,
+      "score_fraction": 0.2258807835333182,
+      "tokens_per_summed_score_point": 8553.534582597824
+    },
+    "below15": {
+      "games": 8,
+      "tokens": 1148246,
+      "token_fraction": 0.24986361631433943,
+      "summed_score": 41.051686184011324,
+      "score_fraction": 0.029139941940228804,
+      "tokens_per_summed_score_point": 27970.73900577597
+    }
+  },
+  "submission_limits": {
+    "numToday": 1,
+    "numTotal": 123,
+    "numAllowedNow": 0,
+    "limitedByTotal": false
+  },
+  "new_gpu_runs_this_check": 0,
+  "new_official_submission_attempts_this_check": 0,
+  "next_hypothesis": "Game-independent cap on consecutive generated tokens without an emitted action; evaluate only with paired fixed-budget baseline, not per-game IDs or stored answers",
+  "hypothesis_is_validated": false,
+  "validation_source_sha256": "13c82ada1d026a9351ae8e2d908a2a499de9597ccaf329945afd8d08cdbd7fed"
+}
