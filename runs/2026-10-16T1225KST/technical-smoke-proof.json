@@ -1,0 +1,135 @@
+{
+  "kernel_status": {
+    "checked_utc": "2026-10-16T03:51:17.313082+00:00",
+    "kernel": "koushikrudra/arc3-target40-engineered-harness",
+    "status": "COMPLETE",
+    "failureMessage": null
+  },
+  "request": {
+    "requested_at_utc": "2026-10-16T03:36:23.413222+00:00",
+    "kernel": "koushikrudra/arc3-target40-engineered",
+    "mode": "smoke",
+    "gpu": "NvidiaRtxPro6000",
+    "timeout_seconds": 1800,
+    "submission_attempted": false,
+    "official_score": null,
+    "notebook_sha256": "6b24ac50b4e2f19f777cd4409df53790623b480f350311b1b569d357911e026c",
+    "account": "koushikrudra",
+    "accelerator_quota": {
+      "quotaRefreshTime": "2026-10-17T00:00:00.000Z",
+      "gpuQuota": {
+        "timeUsed": "73873.632649.0s",
+        "timeReserved": "0s",
+        "totalTimeAllowed": "21600s",
+        "minimumTimeAllowed": "21600s",
+        "isPayToScaleEnabled": false,
+        "hasEverRun": true
+      },
+      "tpuQuota": {
+        "timeUsed": "0s",
+        "timeReserved": "0s",
+        "totalTimeAllowed": "72000s",
+        "minimumTimeAllowed": "72000s",
+        "isPayToScaleEnabled": false,
+        "hasEverRun": true
+      }
+    },
+    "response": {
+      "ref": "/code/koushikrudra/arc3-target40-engineered-harness",
+      "url": "https://www.kaggle.com/code/koushikrudra/arc3-target40-engineered-harness",
+      "versionNumber": 1,
+      "error": null,
+      "invalidTags": [],
+      "invalidDatasetSources": [],
+      "invalidCompetitionSources": [],
+      "invalidKernelSources": [],
+      "invalidModelSources": [],
+      "kernelId": 138959941
+    },
+    "request_returned": true
+  },
+  "gpu_preflight": {
+    "model_inference_attempted": false,
+    "passed": true,
+    "python": "3.12.13",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": 97887
+  },
+  "smoke_summary": {
+    "scope": "Public offline games only; official Kaggle hidden-game score is unknown",
+    "evaluation_kind": "smoke",
+    "target": 40.0,
+    "comparison": "strictly greater than target",
+    "valid_evaluation": true,
+    "local_validation_passed": false,
+    "official_score": null,
+    "official_score_guaranteed": false,
+    "submission_authorized": false,
+    "packaging_authorized": false,
+    "mean_public_score": 2.328042328042328,
+    "heldout_mean_public_score": 2.2222222222222223,
+    "public_game_bootstrap_lower_95": 0.7407407407407408,
+    "bootstrap_interval": "one-sided 95% percentile lower bound",
+    "bootstrap_scope": "Variation within these public games only; not hidden-set uncertainty",
+    "bootstrap_samples": 10000,
+    "bootstrap_seed": 20261016,
+    "split_seed": "urad-arc3-target40-v2",
+    "expected_games": 3,
+    "evaluated_games": 3,
+    "expected_canonical_game_ids": [
+      "cn04",
+      "sp80",
+      "su15"
+    ],
+    "missing_game_ids": [],
+    "unexpected_game_ids": [],
+    "duplicate_game_ids": [],
+    "checks": {
+      "all_expected_games_present_once": true,
+      "all_game_scores_valid": true,
+      "all_games_have_inference": true,
+      "all_games_terminal_without_crash": true,
+      "whole_run_within_budget": true,
+      "mean_strictly_above_target": false,
+      "heldout_mean_strictly_above_target": false,
+      "public_bootstrap_lower_strictly_above_target": false
+    },
+    "invalid_reasons": [],
+    "elapsed_seconds": 756.7893884181976,
+    "budget_seconds": 1380.0,
+    "candidate": "Franzen + Affectify D-prime, engineering revision2",
+    "solver_budget_seconds": 180.0,
+    "base_notebook_sha256": "529064586cdfef539880ffb1430db800b62468048e1f660ee242544760385813"
+  },
+  "finished_game_lines": [
+    {
+      "game_id": "cn04-2fe56bfb",
+      "state": "cancelled",
+      "levels": "1",
+      "total_levels": "6",
+      "printed_score": "4.76",
+      "actions": "17",
+      "tokens": "14235"
+    },
+    {
+      "game_id": "su15-1944f8ab",
+      "state": "cancelled",
+      "levels": "1",
+      "total_levels": "9",
+      "printed_score": "2.22",
+      "actions": "18",
+      "tokens": "16014"
+    },
+    {
+      "game_id": "sp80-589a99af",
+      "state": "cancelled",
+      "levels": "0",
+      "total_levels": "6",
+      "printed_score": "0.00",
+      "actions": "12",
+      "tokens": "17674"
+    }
+  ],
+  "log_sha256": "ca57fe292d2a2cb7dd69fd13e32153c4aeee54cd20160e09808d5a6d35d2ff92",
+  "purpose": "Completed GPU integration evidence only; no official score guarantee or automatic submission authorization"
+}

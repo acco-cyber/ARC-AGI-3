@@ -1,0 +1,13 @@
+{
+  "purpose": "Official starter packaging for a live competition gateway rerun",
+  "target_official_score_exclusive": 40,
+  "official_score": null,
+  "is_score_evidence": false,
+  "full_public_validation_passed": false,
+  "technical_smoke_completed": true,
+  "technical_smoke_notebook_sha256": "6b24ac50b4e2f19f777cd4409df53790623b480f350311b1b569d357911e026c",
+  "technical_smoke_elapsed_seconds": 756.7893884181976,
+  "technical_smoke_public_mean": 2.328042328042328,
+  "engineered_source_sha256": "29887ff31a7ddd9d8358c23316995f371366092250a113df04ee28f1c04fb54d",
+  "scope": "GPU integration passed on the first source revision; later changes are diagnostic persistence and packaging, covered by CPU tests"
+}

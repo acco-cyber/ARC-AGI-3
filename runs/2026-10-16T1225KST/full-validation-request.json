@@ -1,0 +1,43 @@
+{
+  "requested_at_utc": "2026-10-16T03:58:14.379280+00:00",
+  "kernel": "koushikrudra/arc3-target40-engineered-harness",
+  "mode": "validation",
+  "gpu": "NvidiaRtxPro6000",
+  "timeout_seconds": 9000,
+  "submission_attempted": false,
+  "official_score": null,
+  "notebook_sha256": "389871eb573c71bd54f6519aba450d2c00cecf194337b1ad580fb7a03ffc4078",
+  "account": "koushikrudra",
+  "accelerator_quota": {
+    "quotaRefreshTime": "2026-10-17T00:00:00.000Z",
+    "gpuQuota": {
+      "timeUsed": "74651.928649.0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "21600s",
+      "minimumTimeAllowed": "21600s",
+      "isPayToScaleEnabled": false,
+      "hasEverRun": true
+    },
+    "tpuQuota": {
+      "timeUsed": "0s",
+      "timeReserved": "0s",
+      "totalTimeAllowed": "72000s",
+      "minimumTimeAllowed": "72000s",
+      "isPayToScaleEnabled": false,
+      "hasEverRun": true
+    }
+  },
+  "response": {
+    "ref": "/code/koushikrudra/arc3-target40-engineered-harness",
+    "url": "https://www.kaggle.com/code/koushikrudra/arc3-target40-engineered-harness",
+    "versionNumber": 3,
+    "error": null,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 138959941
+  },
+  "request_returned": true
+}

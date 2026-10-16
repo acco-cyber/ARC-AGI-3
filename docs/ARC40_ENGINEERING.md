@@ -42,8 +42,13 @@ The bootstrap represents variation within these public games, not hidden tasks.
 
 A real competition rerun automatically selects the live gateway and preserves
 the original scheduler/inference setup. Actual scored output belongs to the
-competition gateway. No local placeholder parquet is created, and a smoke run
-is not presented as an eligible scored submission.
+competition gateway. A smoke run creates no packaging file. Only after the full public gate passes
+does validation create the official starter schema stub required for a live
+rerun, plus explicit metadata that the stub is not score evidence.
+
+Full request snapshots are opt-in through `ARC40_SAVE_REQUEST_LOGS=1`. Measured
+runs use minimal framework diagnostics, release the GPU, then save compact
+full-precision benchmark JSON. Bulky HTML and frame serialization are excluded.
 
 ## Validation and provenance
 
@@ -77,3 +82,43 @@ No public downloadable single-GPU Kaggle result above 40 was verified by these
 reviews. TWIN, PRO-LONG, Kepler and Memento executable-model results are research
 references; their frontier-API/public-demo scores are not offline Kaggle evidence.
 Changing models, quantization, prompts or cache policy requires a measured A/B run.
+
+## Version scope
+
+The first explicit GPU smoke request uses notebook SHA256
+`6b24ac50b4e2f19f777cd4409df53790623b480f350311b1b569d357911e026c`
+(source in commit `e1dfde9`). The later revision changes diagnostic persistence,
+request-log defaults, stale-output cleanup and gated packaging. It preserves
+model/prompt/inference configuration. Do not label a later source hash as GPU
+tested on the strength of the earlier request; each receipt records its hash.
+
+## Measured smoke and official score probe
+
+The completed V1 Kaggle GPU smoke used RTX PRO6000 97887MiB, Python3.12.13,
+server readiness after511seconds and total reported elapsed756.789seconds.
+All three selected games had real inference, finite scores and valid terminal
+cancellation. Their three-minute mean was2.328; this is not an official score
+or a full-public performance estimate. The exact output files are in
+`runs/2026-10-16T1225KST/smoke-v1`.
+
+The separate `arc3-target40-submission.ipynb` wrapper reuses this technical
+evidence and the CPU-reviewed engineering changes. Commit mode makes the
+official starter schema stub without loading the model. The competition marker
+activates the real agent automatically. This is a prepared official score
+probe targeting above40, not a claimed public-gate pass or a score guarantee.
+Its submission is blocked by the review condition described below.
+The wrapper's manifest explicitly records full_public_validation_passed=false.
+
+`python scripts/build_arc40.py --mode validation` selects the optional full
+public experiment. It is not rerun automatically for every packaging operation.
+
+## Submission block and ongoing validation
+
+The official submission action was rejected by automatic approval review: the
+existing user condition requires at least35 verification before consuming quota,
+while the current three-minute smoke is only2.33 and does not meet that condition.
+No workaround or repeat official submission was attempted. The unaffected
+all25 public validation was launched as Kaggle version3 with a9000-second cap.
+Its code hash is recorded in `full-validation-request.json`; score remains
+unknown until it finishes. V2 packaging remains saved, but it is not an accepted
+official submission.

@@ -4,6 +4,7 @@ import io
 import json
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
@@ -69,6 +70,33 @@ class NotebookIntegrationTests(unittest.TestCase):
             if cell.cell_type == 'code':
                 compile(transformer.transform_cell(cell.source), f'cell_{index}',
                         'exec', flags=ast.PyCF_ALLOW_TOP_LEVEL_AWAIT)
+
+    def _packaging_node(self):
+        notebook = json.loads((ROOT/'Notebook/arc3-target40-engineered.ipynb').read_text())
+        tree = ast.parse(notebook['cells'][23]['source'])
+        return next(node for node in ast.walk(tree) if isinstance(node, ast.If)
+                    and ast.unparse(node.test) == "ARC40_RUN_MODE == 'validation' and _arc_report['local_validation_passed']")
+
+    def test_passing_smoke_cannot_emit_submission_packaging(self):
+        with tempfile.TemporaryDirectory() as folder:
+            scope = {'ARC40_RUN_MODE': 'smoke', '_arc_report': {'local_validation_passed': True},
+                     'WORKING_DIR': Path(folder)}
+            exec(compile(ast.Module(body=[self._packaging_node()], type_ignores=[]),
+                         'packaging', 'exec'), scope)
+            self.assertEqual(list(Path(folder).iterdir()), [])
+
+    def test_full_gate_packaging_is_marked_as_non_score_evidence(self):
+        pandas = Mock()
+        with tempfile.TemporaryDirectory() as folder, patch.dict(sys.modules, {'pandas': pandas}):
+            scope = {'ARC40_RUN_MODE': 'validation', '_arc_report': {'local_validation_passed': True},
+                     'WORKING_DIR': Path(folder), '_arc_json': json,
+                     '_arc_report_path': Path(folder)/'arc40_validation.json'}
+            exec(compile(ast.Module(body=[self._packaging_node()], type_ignores=[]),
+                         'packaging', 'exec'), scope)
+            pandas.DataFrame.return_value.to_parquet.assert_called_once()
+            metadata = json.loads((Path(folder)/'arc40_packaging.json').read_text())
+            self.assertFalse(metadata['is_score_evidence'])
+            self.assertIsNone(metadata['official_score'])
 
 
 if __name__ == '__main__':

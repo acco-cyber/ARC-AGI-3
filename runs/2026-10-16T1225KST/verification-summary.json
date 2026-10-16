@@ -1,0 +1,30 @@
+{
+  "gpu_smoke_status": "COMPLETE",
+  "gpu_smoke_elapsed_seconds": 756.7893884181976,
+  "gpu_name": "RTX PRO 6000 97887 MiB",
+  "sampled_public_games": 3,
+  "all_games_have_inference": true,
+  "smoke_public_mean": 2.328042328042328,
+  "smoke_is_score_prediction": false,
+  "production_commit_status": "COMPLETE",
+  "production_commit_recorded_seconds": 10.478687563,
+  "model_reloaded_for_packaging": false,
+  "cpu_tests_passed": 36,
+  "full_validation_request": {
+    "ref": "/code/koushikrudra/arc3-target40-engineered-harness",
+    "url": "https://www.kaggle.com/code/koushikrudra/arc3-target40-engineered-harness",
+    "versionNumber": 3,
+    "error": null,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 138959941
+  },
+  "official_submission": "Blocked by automatic approval review; not sent",
+  "official_score": null,
+  "gpu_validation_scope": "V1 integration; later diagnostic/packaging changes covered by CPU tests",
+  "full_validation_notebook_sha256": "389871eb573c71bd54f6519aba450d2c00cecf194337b1ad580fb7a03ffc4078",
+  "production_notebook_sha256": "8523fa96e8783b75ab47825c3317ddcedcf715126c2e97c7b474c0f401fdbece"
+}

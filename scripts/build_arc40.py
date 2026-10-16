@@ -16,7 +16,9 @@ def replace_once(text, before, after):
     return text.replace(before, after, 1)
 
 
-def build():
+def build(default_mode='smoke'):
+    if default_mode not in {'smoke', 'validation'}:
+        raise ValueError('Build mode must be smoke or validation')
     n = json.loads(BASE.read_text())
     for i, c in enumerate(n["cells"]):
         s = "".join(c["source"])
@@ -31,7 +33,7 @@ def build():
     old = n["metadata"].pop("arc35", {})
     n["metadata"]["arc40"] = {
         "target_exclusive": 40.0, "official_score": None,
-        "inference_validated": False, "default_run_mode": "smoke",
+        "inference_validated": False, "default_run_mode": default_mode,
         "base_notebook_sha256": hashlib.sha256(BASE.read_bytes()).hexdigest(),
         "harness_patch_sha256": hashlib.sha256(n["cells"][4]["source"].encode()).hexdigest(),
         "automatic_submission": False,
@@ -96,14 +98,17 @@ _arc_runtime = _arc_types.ModuleType('arc40_runtime')
 _arc_evaluation = _arc_types.ModuleType('arc40_evaluation')
 """ + "exec(" + repr(helpers) + ", _arc_runtime.__dict__)\n" + "exec(" + repr(evaluation) + ", _arc_evaluation.__dict__)\n" + """_arc_preflight_path = _ArcPath('/kaggle/working/arc40_preflight.json')
 _arc_preflight_path.parent.mkdir(parents=True, exist_ok=True)
+# Remove stale packaging and validation artifacts when rerunning an interactive kernel.
+if not ARC40_TRUE_SUBMISSION:
+    for _name in ('submission.parquet', 'arc40_packaging.json', 'arc40_validation.json', 'arc40_smoke.json'):
+        (_arc_preflight_path.parent / _name).unlink(missing_ok=True)
 _arc_gpu_report = _arc_runtime.preflight_gpu(report_path=_arc_preflight_path)
 print('GPU preflight:', _arc_gpu_report, flush=True)
 print('Mode:', ARC40_RUN_MODE, '| target above', ARC40_TARGET, '| official score UNKNOWN', flush=True)
-# Remove stale packaging and validation artifacts when rerunning an interactive kernel.
-if not ARC40_TRUE_SUBMISSION:
-    for _name in ('submission.parquet', 'arc40_validation.json', 'arc40_smoke.json'):
-        (_arc_preflight_path.parent / _name).unlink(missing_ok=True)
 """
+    n['cells'][1]['source'] = replace_once(n['cells'][1]['source'],
+        "_arc_os.environ.get('ARC40_RUN_MODE', 'smoke')",
+        "_arc_os.environ.get('ARC40_RUN_MODE', " + repr(default_mode) + ")")
     launch = n["cells"][14]["source"]
     anchor = 'print(f"pid {proc.pid} -> {LOG}")'
     launch = replace_once(launch, anchor, anchor + "\n_arc_cleanup_server = _arc_runtime.register_owned_server(proc)")
@@ -135,6 +140,8 @@ else:
         "subprocess.run(['git','apply',str(_arc_accounting_path)], cwd=BUNDLE_DIR/'src', check=True)\n" +
         "print('Baseline and final-token accounting patches applied successfully')")
     config = n["cells"][18]["source"].replace('ARC40_PUBLIC_SECONDS', 'ARC40_EVAL_SECONDS')
+    config = replace_once(config, 'bm.solver.save_request_logs = not TRUE_SUBMISSION',
+        "bm.solver.save_request_logs = (not TRUE_SUBMISSION and os.environ.get('ARC40_SAVE_REQUEST_LOGS', '0') == '1')")
     n["cells"][18]["source"] = config
     bench = n["cells"][23]["source"]
     start = bench.index('if not TRUE_SUBMISSION:\n    if len(bm.games)')
@@ -167,12 +174,16 @@ if TRUE_SUBMISSION and _arc_time.time() >= ARC40_START_EPOCH + 532 * 60:
     raise RuntimeError('Competition wall budget exhausted during startup')""")
     anchor = 'await bm.run(soft_end_time=soft_end, runtime_environment=target, minimal_diagnostics=TRUE_SUBMISSION)'
     bench = replace_once(bench, anchor, """try:
-    await bm.run(soft_end_time=soft_end, runtime_environment=target, minimal_diagnostics=TRUE_SUBMISSION)
+    await bm.run(soft_end_time=soft_end, runtime_environment=target, minimal_diagnostics=True)
 finally:
     # Release GPU before CPU aggregation or a failed validation assertion.
     if '_stop_monitor' in globals():
         _stop_monitor.set()
     _arc_cleanup_server()
+if not TRUE_SUBMISSION:
+    # Keep compact full-precision evidence after releasing the GPU. Skip bulky
+    # frame pickles, solver snapshots and HTML rendering in the measured run.
+    bm._save_json()
 """)
     start = bench.index('if not TRUE_SUBMISSION:\n    import math')
     bench = bench[:start] + """if not TRUE_SUBMISSION:
@@ -205,8 +216,18 @@ finally:
     print(_arc_json.dumps({k:v for k,v in _arc_report.items() if k != 'games'}, indent=2), flush=True)
     if ARC40_RUN_MODE == 'validation' and not _arc_report['local_validation_passed']:
         raise RuntimeError('Public target above40 did not pass. Inspect arc40_validation.json.')
-    # No placeholder packaging parquet is created by smoke/validation. Submission
-    # requires a separately reviewed artifact from a completed competition run.
+    if ARC40_RUN_MODE == 'validation' and _arc_report['local_validation_passed']:
+        # The official starter requires a commit packaging file before its live
+        # gateway rerun. This schema stub is not a measured or predicted score.
+        import pandas as pd
+        pd.DataFrame([['1_0', '1', True, 1]],
+            columns=['row_id','game_id','end_of_game','score']).to_parquet(
+                WORKING_DIR/'submission.parquet', index=False)
+        (WORKING_DIR/'arc40_packaging.json').write_text(_arc_json.dumps({
+            'kind':'Official-starter schema stub for live gateway rerun',
+            'is_score_evidence':False, 'official_score':None,
+            'local_gate_report':str(_arc_report_path),
+        }, indent=2))
 """
     bench = bench.replace('BASE_HASH_PLACEHOLDER', n['metadata']['arc40']['base_notebook_sha256'])
     # Cleanup also covers game-list/manifest failures before bm.run is entered.
@@ -239,4 +260,7 @@ finally:
     return OUT
 
 if __name__ == '__main__':
-    print(build())
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--mode', choices=['smoke','validation'], default='smoke')
+    print(build(parser.parse_args().mode))

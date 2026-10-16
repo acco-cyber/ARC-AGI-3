@@ -22,10 +22,13 @@ def main():
     api.authenticate()
     meta = json.loads((ROOT/'launch/arc40/kernel-metadata.json').read_text())
     notebook = ROOT/'launch/arc40'/meta['code_file']
+    source = json.loads(notebook.read_text())
+    mode = source['metadata']['arc40']['default_run_mode']
+    timeout = 1800 if mode == 'smoke' else 9000
     receipt = {
         'requested_at_utc': datetime.now(timezone.utc).isoformat(),
-        'kernel': meta['id'], 'mode': 'smoke', 'gpu': 'NvidiaRtxPro6000',
-        'timeout_seconds': 1800, 'submission_attempted': False,
+        'kernel': meta['id'], 'mode': mode, 'gpu': 'NvidiaRtxPro6000',
+        'timeout_seconds': timeout, 'submission_attempted': False,
         'official_score': None,
         'notebook_sha256': hashlib.sha256(notebook.read_bytes()).hexdigest(),
         'account': api.get_config_value('username'),
@@ -36,7 +39,7 @@ def main():
     except Exception as exc:
         receipt['quota_read_error'] = {'type': type(exc).__name__, 'message': str(exc)[:1000]}
     try:
-        response = api.kernels_push(str(ROOT/'launch/arc40'), timeout='1800', acc='NvidiaRtxPro6000')
+        response = api.kernels_push(str(ROOT/'launch/arc40'), timeout=str(timeout), acc='NvidiaRtxPro6000')
         receipt['response'] = json.loads(str(response))
         receipt['request_returned'] = True
     except Exception as exc:

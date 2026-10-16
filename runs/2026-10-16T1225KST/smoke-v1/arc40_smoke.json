@@ -1,0 +1,81 @@
+{
+  "scope": "Public offline games only; official Kaggle hidden-game score is unknown",
+  "evaluation_kind": "smoke",
+  "target": 40.0,
+  "comparison": "strictly greater than target",
+  "valid_evaluation": true,
+  "local_validation_passed": false,
+  "official_score": null,
+  "official_score_guaranteed": false,
+  "submission_authorized": false,
+  "packaging_authorized": false,
+  "mean_public_score": 2.328042328042328,
+  "heldout_mean_public_score": 2.2222222222222223,
+  "public_game_bootstrap_lower_95": 0.7407407407407408,
+  "bootstrap_interval": "one-sided 95% percentile lower bound",
+  "bootstrap_scope": "Variation within these public games only; not hidden-set uncertainty",
+  "bootstrap_samples": 10000,
+  "bootstrap_seed": 20261016,
+  "split_seed": "urad-arc3-target40-v2",
+  "expected_games": 3,
+  "evaluated_games": 3,
+  "expected_canonical_game_ids": [
+    "cn04",
+    "sp80",
+    "su15"
+  ],
+  "missing_game_ids": [],
+  "unexpected_game_ids": [],
+  "duplicate_game_ids": [],
+  "checks": {
+    "all_expected_games_present_once": true,
+    "all_game_scores_valid": true,
+    "all_games_have_inference": true,
+    "all_games_terminal_without_crash": true,
+    "whole_run_within_budget": true,
+    "mean_strictly_above_target": false,
+    "heldout_mean_strictly_above_target": false,
+    "public_bootstrap_lower_strictly_above_target": false
+  },
+  "invalid_reasons": [],
+  "elapsed_seconds": 756.7893884181976,
+  "budget_seconds": 1380.0,
+  "games": [
+    {
+      "game_id": "cn04-2fe56bfb",
+      "canonical_game_id": "cn04",
+      "state": "cancelled",
+      "score": 4.761904761904762,
+      "actions": 17,
+      "generated_tokens": 14235,
+      "levels_completed": 1,
+      "total_levels": 6,
+      "split": "development"
+    },
+    {
+      "game_id": "sp80-589a99af",
+      "canonical_game_id": "sp80",
+      "state": "cancelled",
+      "score": 0.0,
+      "actions": 12,
+      "generated_tokens": 17674,
+      "levels_completed": 0,
+      "total_levels": 6,
+      "split": "development"
+    },
+    {
+      "game_id": "su15-1944f8ab",
+      "canonical_game_id": "su15",
+      "state": "cancelled",
+      "score": 2.2222222222222223,
+      "actions": 18,
+      "generated_tokens": 16014,
+      "levels_completed": 1,
+      "total_levels": 9,
+      "split": "heldout"
+    }
+  ],
+  "candidate": "Franzen + Affectify D-prime, engineering revision2",
+  "solver_budget_seconds": 180.0,
+  "base_notebook_sha256": "529064586cdfef539880ffb1430db800b62468048e1f660ee242544760385813"
+}

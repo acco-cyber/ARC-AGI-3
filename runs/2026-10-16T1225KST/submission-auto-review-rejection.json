@@ -1,0 +1,8 @@
+{
+  "recorded_at_utc": "2026-10-16T03:58:00.400638+00:00",
+  "action": "Create official Kaggle competition submission and consume daily quota",
+  "outcome": "Rejected by automatic approval review",
+  "reason": "User required verification of at least35 before submission; current smoke mean2.33 is not sufficient; no score guarantee established",
+  "bypass_attempted": false,
+  "safer_alternative": "Run all25 public validation on the current candidate before any further submission decision"
+}
