@@ -1,0 +1,10 @@
+{
+  "test": "actual extracted _finish_if_needed and TAAF Game.finish_game with GameRun",
+  "upstream_commit": "7652836056c59e044f093e3c13ed7438c814169e",
+  "baseline_exit": 1,
+  "patched_exit": 0,
+  "baseline_summary": "FAILED (failures=5)",
+  "patched_summary": "OK",
+  "test_count": 8,
+  "gpu_used": false
+}

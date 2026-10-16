@@ -1,0 +1,17 @@
+--- a/ARC3-Inference/inference/framework/solver.py
++++ b/ARC3-Inference/inference/framework/solver.py
+@@ -748,7 +748,13 @@
+         if run is not None and run.final_score is None:
+             if self.stop_event.is_set() and run.state == "playing":
+                 run.state = "cancelled"
+-            self.game.finish_game()
++            # Actions bill the analyzer delta up to token_baseline. Preserve
++            # final deliberation that produced no action, including cancellation
++            # and failure turns, in GameRun.final_generated_tokens.
++            current_tokens = _analyzer_reported_tokens(self.analyzer)
++            generated_tokens = max(0, current_tokens - self.token_baseline)
++            self.game.finish_game(generated_tokens=generated_tokens)
++            self.token_baseline = current_tokens
+ 
+     def _write_analysis_html(self) -> None:
+         if self.solver.job_dir is None:

@@ -1,0 +1,6 @@
+{
+  "upstream": "https://github.com/Tufalabs/duck-harness",
+  "commit": "7652836056c59e044f093e3c13ed7438c814169e",
+  "modifications": "Baseline notebook harness patch plus scripts/patches/token_accounting.patch",
+  "purpose": "AST-based CPU regression tests of actual upstream finish methods"
+}
