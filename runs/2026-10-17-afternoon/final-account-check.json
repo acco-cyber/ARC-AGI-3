@@ -1,0 +1,48 @@
+{
+  "checked_at_utc": "2026-10-17T06:54:17.090653+00:00",
+  "latest_records": [
+    {
+      "ref": 57257762,
+      "date": "2026-10-16T06:14:08.46Z",
+      "status": "complete",
+      "publicScore": "30.59",
+      "url": "/code/koushikrudra/arc3-target40-engineered-harness?scriptVersionId=358880096"
+    },
+    {
+      "ref": 57225596,
+      "date": "2026-10-15T09:51:01.287Z",
+      "status": "error",
+      "publicScore": "",
+      "url": "/code/koushikrudra/arc-3-nabi?scriptVersionId=358630563"
+    },
+    {
+      "ref": 57091970,
+      "date": "2026-10-12T02:01:20.82Z",
+      "status": "error",
+      "publicScore": "",
+      "url": "/submissions/57091970/57091970.raw"
+    },
+    {
+      "ref": 57081722,
+      "date": "2026-10-11T17:52:01.53Z",
+      "status": "error",
+      "publicScore": "",
+      "url": "/submissions/57081722/57081722.raw"
+    },
+    {
+      "ref": 56856536,
+      "date": "2026-10-05T16:10:42.64Z",
+      "status": "complete",
+      "publicScore": "25.47",
+      "url": "/code/koushikrudra/arc-agi-3-milestone-2-solution?scriptVersionId=354340320"
+    }
+  ],
+  "maximum_score_in_latest_page": 30.59,
+  "submission_limits": {
+    "numToday": 0,
+    "numTotal": 123,
+    "numAllowedNow": 1,
+    "limitedByTotal": false
+  },
+  "new_official_submission_attempted_by_this_work": false
+}
