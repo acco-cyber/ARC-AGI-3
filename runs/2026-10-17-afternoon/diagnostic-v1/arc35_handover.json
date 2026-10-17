@@ -1,0 +1,8 @@
+{
+  "enabled": true,
+  "token_quantum": 2048,
+  "voluntary_handovers": 3,
+  "ordinary_handovers_seen": 0,
+  "max_tokens_without_action_at_handover": 4105,
+  "voluntary_handover_wait_seconds": 9.839999995620019e-05
+}

@@ -1,0 +1,51 @@
+{
+  "kernel": "koushikrudra/arc3-arc3-lease2048-diagnostic",
+  "downloaded_at_utc": "2026-10-17T06:31:35.718470+00:00",
+  "files": [
+    {
+      "file": "arc35_handover.json",
+      "bytes": 215,
+      "sha256": "34d89cd6b3f627d72647f7dfc0163e14ffb4a18823c148a5981452f9805531f6"
+    },
+    {
+      "file": "arc35_level_coverage.json",
+      "bytes": 18427,
+      "sha256": "b6e84cf17feb73ada369985b7210a60e77a0f2b8b371254cfbec7d88e8af7d08"
+    },
+    {
+      "file": "arc3_load_parity_probe.py",
+      "bytes": 14464,
+      "sha256": "d186e86b5390e2cb08236666afbeece0e2f41236d2fbacd6c25826e0b8715b15"
+    },
+    {
+      "file": "arc40_eval_manifest.json",
+      "bytes": 1634,
+      "sha256": "b9b67dc7c17682848a7775940051e4ec8dd49f02884c02daf4d82f2b49c17abd"
+    },
+    {
+      "file": "arc40_preflight.json",
+      "bytes": 166,
+      "sha256": "cba9ea21b9a1490fcec1dec5624581e587842888b0db823b3b56c7ecc6823b9a"
+    },
+    {
+      "file": "arc40_smoke.json",
+      "bytes": 2505,
+      "sha256": "4ee04b48ffe4e426283677f468eabe438fd9759b6b7512121cb0adb3104c1023"
+    },
+    {
+      "file": "benchmark.json",
+      "bytes": 15426,
+      "sha256": "8788376129aa4891dece447045d37450aa752d16f8759949557bddcf13e80f9f"
+    },
+    {
+      "file": "runtime_load_probe/probe-client.log",
+      "bytes": 1177,
+      "sha256": "17b9a4169058c4a05d115ac005f82b719097c2d027025bbf53a2fc200d9f7f4b"
+    },
+    {
+      "file": "serve.log",
+      "bytes": 119568,
+      "sha256": "bf0ecfeab5366808aec806f5fe1a5f6257d382a58a050e7fd72640e877f7f60f"
+    }
+  ]
+}

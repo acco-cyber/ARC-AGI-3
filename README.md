@@ -82,7 +82,7 @@ Based on [Daniel Franzen's solution](https://github.com/da-fr/arc-agi-3-solution
 and the [official starter](https://github.com/arcprize/ARC-AGI-3-Kaggle-Starter).
 Third-party code and weights retain their respective licenses.
 
-## Current run state — 17 October 2026
+## Established baseline — 17 October 2026
 
 - V3 full-public validation completed: mean **56.3511**, fixed public partition
   mean **63.0058**, within-public bootstrap lower **42.3044**; all 25 games had
@@ -93,9 +93,12 @@ Third-party code and weights retain their respective licenses.
 - All171 visible submission records were read using cursor pagination:123
   complete and 48 error records. Page-number pagination had repeated the first
   page and must not be used to claim a complete audit.
-- The API reports one submission used today and **zero currently allowed**.
-  No new GPU run or submission was requested in this pass. Do not resubmit the
-  unchanged source merely to fill slots.
+- The latest afternoon API snapshot reports **one submission available**.
+  No new competition submission was made. A separate three-game GPU diagnostic
+  completed with three voluntary admission handovers; it is not score evidence
+  for the full candidate. The synthetic load probe failed during tokenizer
+  preparation and its comparison is invalid. See the
+  [execution summary](runs/2026-10-17-afternoon/execution-summary.json).
 - Public56.35 versus official 30.59 is evidence of a transfer gap, not proof of
   a server fault. Preserve these artifacts as the baseline for paired experiments.
 

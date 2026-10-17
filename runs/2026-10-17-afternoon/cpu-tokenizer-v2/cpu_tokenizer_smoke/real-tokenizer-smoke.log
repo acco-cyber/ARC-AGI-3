@@ -1,0 +1,37 @@
+{"target_input_tokens": 2048, "helper_token_count": 2048, "default_template": {"type": "transformers.tokenization_utils_base.BatchEncoding", "keys": ["attention_mask", "input_ids"], "mapping_length": 2, "input_ids_type": "builtins.list", "shape": [2048], "token_count": 2048}, "explicit_flat_template": {"type": "builtins.list", "shape": [2048], "token_count": 2048}, "max_output_tokens": 64, "passed": true}
+{"target_input_tokens": 8192, "helper_token_count": 8192, "default_template": {"type": "transformers.tokenization_utils_base.BatchEncoding", "keys": ["attention_mask", "input_ids"], "mapping_length": 2, "input_ids_type": "builtins.list", "shape": [8192], "token_count": 8192}, "explicit_flat_template": {"type": "builtins.list", "shape": [8192], "token_count": 8192}, "max_output_tokens": 64, "passed": true}
+{"target_input_tokens": 16384, "helper_token_count": 16384, "default_template": {"type": "transformers.tokenization_utils_base.BatchEncoding", "keys": ["attention_mask", "input_ids"], "mapping_length": 2, "input_ids_type": "builtins.list", "shape": [16384], "token_count": 16384}, "explicit_flat_template": {"type": "builtins.list", "shape": [16384], "token_count": 16384}, "max_output_tokens": 64, "passed": true}
+{
+  "scope": "CPU-only real-tokenizer shape smoke; no model inference or score evidence",
+  "passed": true,
+  "weights_loaded": false,
+  "server_started": false,
+  "http_requests_sent": false,
+  "gpu_enabled": false,
+  "official_score": null,
+  "authorizes_submission": false,
+  "helper_sha256": "76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0",
+  "model_path": "/kaggle/input/models/dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/transformers/default/1",
+  "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]",
+  "package_versions": {
+    "transformers": "5.12.1",
+    "tokenizers": "0.22.2",
+    "huggingface-hub": "1.33.0",
+    "jinja2": "3.1.6"
+  },
+  "package_paths": {
+    "transformers": "/tmp/arc3-cpu-tokenizer-site-packages/transformers/__init__.py",
+    "tokenizers": "/tmp/arc3-cpu-tokenizer-site-packages/tokenizers/__init__.py",
+    "huggingface_hub": "/tmp/arc3-cpu-tokenizer-site-packages/huggingface_hub/__init__.py"
+  },
+  "tokenizer_class": "transformers.models.qwen2.tokenization_qwen2.Qwen2Tokenizer",
+  "tokenizer_is_fast": true,
+  "chat_template_type": "str",
+  "loaded_ml_frameworks": [
+    "torch"
+  ],
+  "torch_cuda_initialized": false,
+  "elapsed_seconds": 24.735310207999987
+}
+
+[transformers] You are using a model of type `qwen4_exp` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.

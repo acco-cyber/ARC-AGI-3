@@ -1,0 +1,139 @@
+[{"stream_name":"stderr","time":12.514822517,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.51487886,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.514885636,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.514897445999999,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.457556482,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.457594363,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.457606776,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.457610032,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":15.230812183,"data":"dependency-preparation\n"}
+,{"stream_name":"stdout","time":22.510397875,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/click-8.5.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":22.510475959,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/hf_xet-1.7.0.dev1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":22.510482707,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/huggingface_hub-1.33.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":22.510487163,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":22.510491462,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/transformers-5.12.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":22.510495585,"data":"Installing collected packages: transformers, tokenizers, huggingface-hub, hf-xet, click\n"}
+,{"stream_name":"stdout","time":22.510499644,"data":"Successfully installed click-8.5.0 hf-xet-1.7.0.dev1 huggingface-hub-1.33.0 tokenizers-0.22.2 transformers-5.12.1\n"}
+,{"stream_name":"stdout","time":22.510503802,"data":"{\n"}
+,{"stream_name":"stdout","time":22.51050748,"data":"  \"purpose\": \"CPU tokenizer-only offline dependency preparation\",\n"}
+,{"stream_name":"stdout","time":22.510511678,"data":"  \"python\": \"3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]\",\n"}
+,{"stream_name":"stdout","time":22.510515893,"data":"  \"target_directory\": \"/kaggle/working/cpu_tokenizer_smoke/site-packages\",\n"}
+,{"stream_name":"stdout","time":22.510520116,"data":"  \"pinned_tokenizer_packages\": [\n"}
+,{"stream_name":"stdout","time":22.510540468,"data":"    \"transformers\",\n"}
+,{"stream_name":"stdout","time":22.510545545,"data":"    \"tokenizers\",\n"}
+,{"stream_name":"stdout","time":22.510550093,"data":"    \"huggingface-hub\"\n"}
+,{"stream_name":"stdout","time":22.510554482,"data":"  ],\n"}
+,{"stream_name":"stdout","time":22.51067238,"data":"  \"installed_wheels\": {\n"}
+,{"stream_name":"stdout","time":22.510677562,"data":"    \"click\": {\n"}
+,{"stream_name":"stdout","time":22.510681502,"data":"      \"version\": \"8.5.0\",\n"}
+,{"stream_name":"stdout","time":22.510685599,"data":"      \"wheel\": \"click-8.5.0-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":22.51068971,"data":"    },\n"}
+,{"stream_name":"stdout","time":22.510693529,"data":"    \"hf-xet\": {\n"}
+,{"stream_name":"stdout","time":22.510697378,"data":"      \"version\": \"1.7.0.dev1\",\n"}
+,{"stream_name":"stdout","time":22.510717864,"data":"      \"wheel\": \"hf_xet-1.7.0.dev1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\"\n"}
+,{"stream_name":"stdout","time":22.510724792,"data":"    },\n"}
+,{"stream_name":"stdout","time":22.510733247,"data":"    \"huggingface-hub\": {\n"}
+,{"stream_name":"stdout","time":22.510750526,"data":"      \"version\": \"1.33.0\",\n"}
+,{"stream_name":"stdout","time":22.510755552,"data":"      \"wheel\": \"huggingface_hub-1.33.0-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":22.51076037,"data":"    },\n"}
+,{"stream_name":"stdout","time":22.510764256,"data":"    \"tokenizers\": {\n"}
+,{"stream_name":"stdout","time":22.510768144,"data":"      \"version\": \"0.22.2\",\n"}
+,{"stream_name":"stdout","time":22.510772178,"data":"      \"wheel\": \"tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\"\n"}
+,{"stream_name":"stdout","time":22.51077597,"data":"    },\n"}
+,{"stream_name":"stdout","time":22.510779587000002,"data":"    \"transformers\": {\n"}
+,{"stream_name":"stdout","time":22.510783424,"data":"      \"version\": \"5.12.1\",\n"}
+,{"stream_name":"stdout","time":22.51078734,"data":"      \"wheel\": \"transformers-5.12.1-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":22.510790968,"data":"    }\n"}
+,{"stream_name":"stdout","time":22.510794482,"data":"  },\n"}
+,{"stream_name":"stdout","time":22.510798099,"data":"  \"reused_image_dependencies\": {\n"}
+,{"stream_name":"stdout","time":22.510801722,"data":"    \"filelock\": \"3.25.2\",\n"}
+,{"stream_name":"stdout","time":22.510805938,"data":"    \"fsspec\": \"2025.3.0\",\n"}
+,{"stream_name":"stdout","time":22.510809813,"data":"    \"httpx\": \"0.28.1\",\n"}
+,{"stream_name":"stdout","time":22.510813633,"data":"    \"numpy\": \"2.4.6\",\n"}
+,{"stream_name":"stdout","time":22.510817536,"data":"    \"packaging\": \"26.2\",\n"}
+,{"stream_name":"stdout","time":22.510821544,"data":"    \"pyyaml\": \"6.0.3\",\n"}
+,{"stream_name":"stdout","time":22.51082529,"data":"    \"regex\": \"2025.11.3\",\n"}
+,{"stream_name":"stdout","time":22.510829364,"data":"    \"safetensors\": \"0.7.0\",\n"}
+,{"stream_name":"stdout","time":22.510833122,"data":"    \"tqdm\": \"4.67.3\",\n"}
+,{"stream_name":"stdout","time":22.510836893,"data":"    \"typer\": \"0.24.1\",\n"}
+,{"stream_name":"stdout","time":22.510840707,"data":"    \"typing-extensions\": \"4.15.0\"\n"}
+,{"stream_name":"stdout","time":22.510846903,"data":"  },\n"}
+,{"stream_name":"stdout","time":22.510850816,"data":"  \"gpu_packages_installed\": false,\n"}
+,{"stream_name":"stdout","time":22.510855065,"data":"  \"model_weights_loaded\": false,\n"}
+,{"stream_name":"stdout","time":22.510858754,"data":"  \"server_started\": false,\n"}
+,{"stream_name":"stdout","time":22.510862785,"data":"  \"http_requests_sent\": false\n"}
+,{"stream_name":"stdout","time":22.510875641,"data":"}\n"}
+,{"stream_name":"stdout","time":22.510879514,"data":"\n"}
+,{"stream_name":"stdout","time":22.511705251,"data":"real-tokenizer-smoke\n"}
+,{"stream_name":"stdout","time":75.376104365,"data":"{\"target_input_tokens\": 2048, \"helper_token_count\": 2048, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [2048], \"token_count\": 2048}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [2048], \"token_count\": 2048}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":75.376180071,"data":"{\"target_input_tokens\": 8192, \"helper_token_count\": 8192, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [8192], \"token_count\": 8192}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [8192], \"token_count\": 8192}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":75.376203269,"data":"{\"target_input_tokens\": 16384, \"helper_token_count\": 16384, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [16384], \"token_count\": 16384}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [16384], \"token_count\": 16384}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":75.376208305,"data":"{\n"}
+,{"stream_name":"stdout","time":75.376211051,"data":"  \"scope\": \"CPU-only real-tokenizer shape smoke; no model inference or score evidence\",\n"}
+,{"stream_name":"stdout","time":75.376214008,"data":"  \"passed\": false,\n"}
+,{"stream_name":"stdout","time":75.376216784,"data":"  \"weights_loaded\": false,\n"}
+,{"stream_name":"stdout","time":75.376219406,"data":"  \"server_started\": false,\n"}
+,{"stream_name":"stdout","time":75.376222041,"data":"  \"http_requests_sent\": false,\n"}
+,{"stream_name":"stdout","time":75.376224668,"data":"  \"gpu_enabled\": false,\n"}
+,{"stream_name":"stdout","time":75.376227329,"data":"  \"official_score\": null,\n"}
+,{"stream_name":"stdout","time":75.376229925,"data":"  \"authorizes_submission\": false,\n"}
+,{"stream_name":"stdout","time":75.376232783,"data":"  \"helper_sha256\": \"76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0\",\n"}
+,{"stream_name":"stdout","time":75.376235573,"data":"  \"model_path\": \"/kaggle/input/models/dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/transformers/default/1\",\n"}
+,{"stream_name":"stdout","time":75.376238517,"data":"  \"python\": \"3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]\",\n"}
+,{"stream_name":"stdout","time":75.376287563,"data":"  \"package_versions\": {\n"}
+,{"stream_name":"stdout","time":75.376294812,"data":"    \"transformers\": \"5.12.1\",\n"}
+,{"stream_name":"stdout","time":75.376306159,"data":"    \"tokenizers\": \"0.22.2\",\n"}
+,{"stream_name":"stdout","time":75.376309246,"data":"    \"huggingface-hub\": \"1.33.0\",\n"}
+,{"stream_name":"stdout","time":75.376311952,"data":"    \"jinja2\": \"3.1.6\"\n"}
+,{"stream_name":"stdout","time":75.376314567,"data":"  },\n"}
+,{"stream_name":"stdout","time":75.376325624,"data":"  \"package_paths\": {\n"}
+,{"stream_name":"stdout","time":75.376328416,"data":"    \"transformers\": \"/kaggle/working/cpu_tokenizer_smoke/site-packages/transformers/__init__.py\",\n"}
+,{"stream_name":"stdout","time":75.376332856,"data":"    \"tokenizers\": \"/kaggle/working/cpu_tokenizer_smoke/site-packages/tokenizers/__init__.py\",\n"}
+,{"stream_name":"stdout","time":75.376335744,"data":"    \"huggingface_hub\": \"/kaggle/working/cpu_tokenizer_smoke/site-packages/huggingface_hub/__init__.py\"\n"}
+,{"stream_name":"stdout","time":75.376338555,"data":"  },\n"}
+,{"stream_name":"stdout","time":75.376344215,"data":"  \"tokenizer_class\": \"transformers.models.qwen2.tokenization_qwen2.Qwen2Tokenizer\",\n"}
+,{"stream_name":"stdout","time":75.376347023,"data":"  \"tokenizer_is_fast\": true,\n"}
+,{"stream_name":"stdout","time":75.376349624,"data":"  \"chat_template_type\": \"str\",\n"}
+,{"stream_name":"stdout","time":75.37635232,"data":"  \"loaded_ml_frameworks\": [\n"}
+,{"stream_name":"stdout","time":75.37635961,"data":"    \"torch\"\n"}
+,{"stream_name":"stdout","time":75.376362261,"data":"  ],\n"}
+,{"stream_name":"stdout","time":75.376364732,"data":"  \"error_type\": \"RuntimeError\",\n"}
+,{"stream_name":"stdout","time":75.376367357,"data":"  \"error\": \"Tokenizer smoke imported an ML framework: torch\",\n"}
+,{"stream_name":"stdout","time":75.376370158,"data":"  \"elapsed_seconds\": 46.36782430000005\n"}
+,{"stream_name":"stdout","time":75.376372874,"data":"}\n"}
+,{"stream_name":"stdout","time":75.376375682,"data":"\n"}
+,{"stream_name":"stdout","time":75.377461825,"data":"[transformers] You are using a model of type `qwen4_exp` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.\n"}
+,{"stream_name":"stdout","time":75.377510886,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stdout","time":75.377517205,"data":"  File \"/kaggle/working/cpu_tokenizer_smoke/run_cpu_tokenizer_smoke.py\", line 82, in \u003cmodule\u003e\n"}
+,{"stream_name":"stdout","time":75.377556561,"data":"    raise RuntimeError('Tokenizer smoke imported an ML framework: ' + ', '.join(loaded_frameworks))\n"}
+,{"stream_name":"stdout","time":75.377561499,"data":"RuntimeError: Tokenizer smoke imported an ML framework: torch\n"}
+,{"stream_name":"stdout","time":75.377565573,"data":"\n"}
+,{"stream_name":"stderr","time":75.818497036,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":75.818531234,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":75.818538021,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":75.818727796,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":75.818748882,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":75.818983924,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":75.819101983,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":75.819109129,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":75.819114188,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":75.819118448,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":75.819122358,"data":"RuntimeError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":75.8191263,"data":"/tmp/ipykernel_16/1466301853.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":75.819130847,"data":"     51     if result.returncode:\n"}
+,{"stream_name":"stderr","time":75.81913477,"data":"     52         print(result.stderr[-6000:], flush=True)\n"}
+,{"stream_name":"stderr","time":75.819138653,"data":"---\u003e 53         raise RuntimeError(label+' failed; inspect saved CPU evidence')\n"}
+,{"stream_name":"stderr","time":75.819143233,"data":"     54 report = json.loads((work/'tokenizer_smoke.json').read_text())\n"}
+,{"stream_name":"stderr","time":75.819147328,"data":"     55 assert report['passed']\n"}
+,{"stream_name":"stderr","time":75.81915123,"data":"\n"}
+,{"stream_name":"stderr","time":75.819169691,"data":"RuntimeError: real-tokenizer-smoke failed; inspect saved CPU evidence\n"}
+,{"stream_name":"stderr","time":75.81917443,"data":"\n"}
+,{"stream_name":"stderr","time":78.824377665,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":78.824415943,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":79.052187929,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":79.052216764,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":79.890346944,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":80.278901122,"data":"[NbConvertApp] Writing 43828 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":83.527821292,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":84.606394356,"data":"[NbConvertApp] Writing 373720 bytes to __results__.html\n"}
+]

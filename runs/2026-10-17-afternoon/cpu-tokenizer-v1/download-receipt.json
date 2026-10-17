@@ -1,0 +1,34 @@
+{
+  "kernel": "koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+  "downloaded_at_utc": "2026-10-17T06:43:59.493592+00:00",
+  "files": [
+    {
+      "file": "cpu_tokenizer_smoke/dependencies.json",
+      "bytes": 1390,
+      "sha256": "261d790558793ad36af2d3a0cda6abb2c26870f90a5b7838039dda9d2e2be926"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/dependency-preparation.log",
+      "bytes": 2179,
+      "sha256": "6c13a42e7d76b6c5a6a8793f1760b89689d06bf1fdb7bbdb7b4afad5a90bab06"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/real-tokenizer-smoke.log",
+      "bytes": 3241,
+      "sha256": "8ddf289589080955f0d49dadfbcfa978ffef5b89894a8d999ee101114a0a20a6"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/tokenizer_smoke.json",
+      "bytes": 3196,
+      "sha256": "6ac4beddd69e7be06fe959b3bd7efb9a91062d69b7a132e11351b66cc637266c"
+    }
+  ],
+  "omitted_package_install_metadata": [
+    "cpu_tokenizer_smoke/site-packages/click-8.5.0.dist-info/direct_url.json",
+    "cpu_tokenizer_smoke/site-packages/hf_xet-1.7.0.dev1.dist-info/direct_url.json",
+    "cpu_tokenizer_smoke/site-packages/hf_xet-1.7.0.dev1.dist-info/sboms/hf_xet.cyclonedx.json",
+    "cpu_tokenizer_smoke/site-packages/huggingface_hub-1.33.0.dist-info/direct_url.json",
+    "cpu_tokenizer_smoke/site-packages/tokenizers-0.22.2.dist-info/direct_url.json",
+    "cpu_tokenizer_smoke/site-packages/transformers-5.12.1.dist-info/direct_url.json"
+  ]
+}

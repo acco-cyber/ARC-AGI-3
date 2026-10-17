@@ -1,0 +1,58 @@
+{
+  "canonical_kernel": "koushikrudra/arc3-arc3-lease2048-diagnostic",
+  "cell_count_matches": true,
+  "all_cell_sources_equal": true,
+  "local_file_sha256": "495a0f4b7e187a4b4501343764a4b6724ed86bc618c37ed70f55c5a704ff6473",
+  "remote_source_sha256": "e08ad7fd71980431ae5a60817bd1c395ec0fd3f28c12ab88b4c94b29b5c6fea0",
+  "metadata": {
+    "languageNullable": "python",
+    "kernelTypeNullable": "notebook",
+    "isPrivateNullable": true,
+    "enableGpuNullable": true,
+    "enableTpuNullable": false,
+    "enableInternetNullable": false,
+    "currentVersionNumberNullable": 1,
+    "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:57e612b484cf3df5026ee4dcc3cb176974b22b2bc0937fb1e16132a8be4cb13c",
+    "machineShapeNullable": "NvidiaRtxPro6000",
+    "id": 139172306,
+    "ref": "koushikrudra/arc3-arc3-lease2048-diagnostic",
+    "title": "ARC3 Arc3 Lease2048 Diagnostic",
+    "author": "Koushik Rudra",
+    "slug": "arc3-arc3-lease2048-diagnostic",
+    "lastRunTime": "2026-10-14T06:20:29.7037827Z",
+    "language": "python",
+    "hasLanguage": true,
+    "kernelType": "notebook",
+    "hasKernelType": true,
+    "isPrivate": true,
+    "hasIsPrivate": true,
+    "enableGpu": true,
+    "hasEnableGpu": true,
+    "enableTpu": false,
+    "hasEnableTpu": true,
+    "enableInternet": false,
+    "hasEnableInternet": true,
+    "categoryIds": [],
+    "datasetDataSources": [
+      "dfranzen/pennyroyal-v253",
+      "dfranzen/taaf-kaggle-source-bundle-copy"
+    ],
+    "kernelDataSources": [],
+    "competitionDataSources": [
+      "arc-prize-2026-arc-agi-3"
+    ],
+    "modelDataSources": [
+      "dfranzen/albucino-qwen3-8-flash-next-drafter/Transformers/default/1",
+      "dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/Transformers/default/1"
+    ],
+    "totalVotes": 0,
+    "currentVersionNumber": 1,
+    "hasCurrentVersionNumber": true,
+    "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:57e612b484cf3df5026ee4dcc3cb176974b22b2bc0937fb1e16132a8be4cb13c",
+    "hasDockerImage": true,
+    "machineShape": "NvidiaRtxPro6000",
+    "hasMachineShape": true
+  },
+  "executed_archive": "Notebook/archive/arc3-lease2048-diagnostic-v1.ipynb",
+  "scope": "Retrieved revision1 cell sources equal archived requested source; does not authenticate a later unexecuted revision2."
+}

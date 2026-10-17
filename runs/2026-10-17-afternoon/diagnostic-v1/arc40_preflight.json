@@ -1,0 +1,7 @@
+{
+  "model_inference_attempted": false,
+  "passed": true,
+  "python": "3.12.13",
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory_mib": 97887
+}

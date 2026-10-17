@@ -1,0 +1,11 @@
+{
+  "notebook": "/workspace/scratch/d88e26ea2efe/ARC-AGI-3/launch/arc3-cpu-tokenizer-shape-smoke/arc3-cpu-tokenizer-shape-smoke.ipynb",
+  "metadata": "/workspace/scratch/d88e26ea2efe/ARC-AGI-3/launch/arc3-cpu-tokenizer-shape-smoke/cpu-tokenizer-kernel-metadata.json",
+  "kernel_metadata": "/workspace/scratch/d88e26ea2efe/ARC-AGI-3/launch/arc3-cpu-tokenizer-shape-smoke/kernel-metadata.json",
+  "notebook_sha256": "db6fcfe1b776398f9efd3df3131f47d1a12e3ab747b8713058e7b857466e4e0a",
+  "helper_sha256": "76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0",
+  "nbformat_validated": true,
+  "gpu_enabled": false,
+  "machine_shape_present": false,
+  "actual_tokenizer_executed_locally": false
+}

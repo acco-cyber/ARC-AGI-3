@@ -1,12 +1,55 @@
+from collections import UserDict
 from dataclasses import replace
 import threading
 import time
 import unittest
 
-from load_parity_probe import ProbeConfig, local_url, quantile, run_phase, shape_plan, build_payload
+from load_parity_probe import (ProbeConfig, local_url, quantile, run_phase, shape_plan,
+                              build_payload, chat_template_token_count)
 
 
 class ProbeTests(unittest.TestCase):
+    def test_template_count_normalizes_flat_single_batch_and_mapping_returns(self):
+        class TensorLike:
+            def __init__(self, values):
+                self.values = values
+            def tolist(self):
+                return self.values
+        for value in ([1, 2, 3], (1, 2, 3), [[1, 2, 3]], ((1, 2, 3),),
+                      {'input_ids': [1, 2, 3], 'attention_mask': [1, 1, 1]},
+                      UserDict(input_ids=[[1, 2, 3]], attention_mask=[[1, 1, 1]]),
+                      TensorLike([1, 2, 3]), TensorLike([[1, 2, 3]]),
+                      UserDict(input_ids=TensorLike([[1, 2, 3]]), attention_mask=None)):
+            with self.subTest(value=repr(value)):
+                self.assertEqual(chat_template_token_count(value), 3)
+        self.assertEqual(chat_template_token_count({'input_ids': []}), 0)
+
+    def test_template_count_rejects_missing_ids_multiple_batches_and_bad_ids(self):
+        for value in ({'attention_mask': [1, 1]}, [[1, 2], [3, 4]],
+                      {'input_ids': [[1, 2], [3, 4]]}, {'input_ids': [[[1, 2]]]}):
+            with self.subTest(value=value), self.assertRaises((ValueError, TypeError)):
+                chat_template_token_count(value)
+        for value in ('ids', None, [True, False], [1.5, 2.5], {'input_ids': 'bad'}):
+            with self.subTest(value=value), self.assertRaises(TypeError):
+                chat_template_token_count(value)
+
+    def test_build_payload_handles_batch_encoding_mapping_instead_of_field_count(self):
+        class MappingTokenizer:
+            def encode(self, text, **kwargs):
+                return [ord(c) for c in text]
+            def decode(self, tokens):
+                return ''.join(chr(c) for c in tokens)
+            def apply_chat_template(self, messages, **kwargs):
+                count = 5 + sum(len(m['content']) for m in messages)
+                return UserDict(input_ids=[0] * count, attention_mask=[1] * count)
+        for target in (2048, 8192, 16384):
+            case = {'case': 0, 'target_input_tokens': target,
+                    'max_output_tokens': 64, 'seed': 1}
+            with self.subTest(target=target):
+                payload, count = build_payload(MappingTokenizer(), case, 0, 'flashnext', 25)
+                self.assertEqual(count, target)
+                self.assertEqual(payload['max_tokens'], 64)
+
     def test_fixed_shape_budget_and_backend_limits(self):
         config = ProbeConfig().validate()
         plan = shape_plan(config)

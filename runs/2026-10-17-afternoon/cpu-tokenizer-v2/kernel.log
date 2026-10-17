@@ -1,0 +1,113 @@
+[{"stream_name":"stderr","time":6.626090442,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.626154352,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.626158952,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.626161401,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.165243495,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.165283445,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.165288506,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.165291826,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":8.507350254,"data":"dependency-preparation\n"}
+,{"stream_name":"stdout","time":13.13957155,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/click-8.5.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":13.13961845,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/hf_xet-1.7.0.dev1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":13.13962255,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/huggingface_hub-1.33.0-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":13.13962486,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\n"}
+,{"stream_name":"stdout","time":13.13962699,"data":"Processing /kaggle/input/datasets/dfranzen/pennyroyal-v253/wheels/transformers-5.12.1-py3-none-any.whl\n"}
+,{"stream_name":"stdout","time":13.13962898,"data":"Installing collected packages: transformers, tokenizers, huggingface-hub, hf-xet, click\n"}
+,{"stream_name":"stdout","time":13.1396309,"data":"Successfully installed click-8.5.0 hf-xet-1.7.0.dev1 huggingface-hub-1.33.0 tokenizers-0.22.2 transformers-5.12.1\n"}
+,{"stream_name":"stdout","time":13.13963286,"data":"{\n"}
+,{"stream_name":"stdout","time":13.1396347,"data":"  \"purpose\": \"CPU tokenizer-only offline dependency preparation\",\n"}
+,{"stream_name":"stdout","time":13.13963777,"data":"  \"python\": \"3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]\",\n"}
+,{"stream_name":"stdout","time":13.13964127,"data":"  \"target_directory\": \"/tmp/arc3-cpu-tokenizer-site-packages\",\n"}
+,{"stream_name":"stdout","time":13.13964476,"data":"  \"pinned_tokenizer_packages\": [\n"}
+,{"stream_name":"stdout","time":13.13964812,"data":"    \"transformers\",\n"}
+,{"stream_name":"stdout","time":13.1396516,"data":"    \"tokenizers\",\n"}
+,{"stream_name":"stdout","time":13.13965499,"data":"    \"huggingface-hub\"\n"}
+,{"stream_name":"stdout","time":13.13965843,"data":"  ],\n"}
+,{"stream_name":"stdout","time":13.1396618,"data":"  \"installed_wheels\": {\n"}
+,{"stream_name":"stdout","time":13.1396652,"data":"    \"click\": {\n"}
+,{"stream_name":"stdout","time":13.13966811,"data":"      \"version\": \"8.5.0\",\n"}
+,{"stream_name":"stdout","time":13.13967126,"data":"      \"wheel\": \"click-8.5.0-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":13.13967473,"data":"    },\n"}
+,{"stream_name":"stdout","time":13.13967795,"data":"    \"hf-xet\": {\n"}
+,{"stream_name":"stdout","time":13.13968118,"data":"      \"version\": \"1.7.0.dev1\",\n"}
+,{"stream_name":"stdout","time":13.1397055,"data":"      \"wheel\": \"hf_xet-1.7.0.dev1-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\"\n"}
+,{"stream_name":"stdout","time":13.13970942,"data":"    },\n"}
+,{"stream_name":"stdout","time":13.139712339999999,"data":"    \"huggingface-hub\": {\n"}
+,{"stream_name":"stdout","time":13.13971562,"data":"      \"version\": \"1.33.0\",\n"}
+,{"stream_name":"stdout","time":13.13971766,"data":"      \"wheel\": \"huggingface_hub-1.33.0-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":13.13971959,"data":"    },\n"}
+,{"stream_name":"stdout","time":13.13972148,"data":"    \"tokenizers\": {\n"}
+,{"stream_name":"stdout","time":13.13972334,"data":"      \"version\": \"0.22.2\",\n"}
+,{"stream_name":"stdout","time":13.13972525,"data":"      \"wheel\": \"tokenizers-0.22.2-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl\"\n"}
+,{"stream_name":"stdout","time":13.13972721,"data":"    },\n"}
+,{"stream_name":"stdout","time":13.13980526,"data":"    \"transformers\": {\n"}
+,{"stream_name":"stdout","time":13.13981104,"data":"      \"version\": \"5.12.1\",\n"}
+,{"stream_name":"stdout","time":13.13981435,"data":"      \"wheel\": \"transformers-5.12.1-py3-none-any.whl\"\n"}
+,{"stream_name":"stdout","time":13.13981765,"data":"    }\n"}
+,{"stream_name":"stdout","time":13.139821,"data":"  },\n"}
+,{"stream_name":"stdout","time":13.13982395,"data":"  \"reused_image_dependencies\": {\n"}
+,{"stream_name":"stdout","time":13.13982742,"data":"    \"filelock\": \"3.25.2\",\n"}
+,{"stream_name":"stdout","time":13.13982964,"data":"    \"fsspec\": \"2025.3.0\",\n"}
+,{"stream_name":"stdout","time":13.13983165,"data":"    \"httpx\": \"0.28.1\",\n"}
+,{"stream_name":"stdout","time":13.13983356,"data":"    \"numpy\": \"2.4.6\",\n"}
+,{"stream_name":"stdout","time":13.13983544,"data":"    \"packaging\": \"26.2\",\n"}
+,{"stream_name":"stdout","time":13.13983734,"data":"    \"pyyaml\": \"6.0.3\",\n"}
+,{"stream_name":"stdout","time":13.13983922,"data":"    \"regex\": \"2025.11.3\",\n"}
+,{"stream_name":"stdout","time":13.13984227,"data":"    \"safetensors\": \"0.7.0\",\n"}
+,{"stream_name":"stdout","time":13.13984574,"data":"    \"tqdm\": \"4.67.3\",\n"}
+,{"stream_name":"stdout","time":13.13984894,"data":"    \"typer\": \"0.24.1\",\n"}
+,{"stream_name":"stdout","time":13.13985241,"data":"    \"typing-extensions\": \"4.15.0\"\n"}
+,{"stream_name":"stdout","time":13.13986992,"data":"  },\n"}
+,{"stream_name":"stdout","time":13.13987452,"data":"  \"gpu_packages_installed\": false,\n"}
+,{"stream_name":"stdout","time":13.13987791,"data":"  \"model_weights_loaded\": false,\n"}
+,{"stream_name":"stdout","time":13.1398807,"data":"  \"server_started\": false,\n"}
+,{"stream_name":"stdout","time":13.13988353,"data":"  \"http_requests_sent\": false\n"}
+,{"stream_name":"stdout","time":13.13988644,"data":"}\n"}
+,{"stream_name":"stdout","time":13.1398892,"data":"\n"}
+,{"stream_name":"stdout","time":13.13989194,"data":"real-tokenizer-smoke\n"}
+,{"stream_name":"stdout","time":41.252490727,"data":"{\"target_input_tokens\": 2048, \"helper_token_count\": 2048, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [2048], \"token_count\": 2048}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [2048], \"token_count\": 2048}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":41.252562727,"data":"{\"target_input_tokens\": 8192, \"helper_token_count\": 8192, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [8192], \"token_count\": 8192}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [8192], \"token_count\": 8192}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":41.252586156,"data":"{\"target_input_tokens\": 16384, \"helper_token_count\": 16384, \"default_template\": {\"type\": \"transformers.tokenization_utils_base.BatchEncoding\", \"keys\": [\"attention_mask\", \"input_ids\"], \"mapping_length\": 2, \"input_ids_type\": \"builtins.list\", \"shape\": [16384], \"token_count\": 16384}, \"explicit_flat_template\": {\"type\": \"builtins.list\", \"shape\": [16384], \"token_count\": 16384}, \"max_output_tokens\": 64, \"passed\": true}\n"}
+,{"stream_name":"stdout","time":41.252591837,"data":"{\n"}
+,{"stream_name":"stdout","time":41.252594767,"data":"  \"scope\": \"CPU-only real-tokenizer shape smoke; no model inference or score evidence\",\n"}
+,{"stream_name":"stdout","time":41.252598157,"data":"  \"passed\": true,\n"}
+,{"stream_name":"stdout","time":41.252600986,"data":"  \"weights_loaded\": false,\n"}
+,{"stream_name":"stdout","time":41.252604017,"data":"  \"server_started\": false,\n"}
+,{"stream_name":"stdout","time":41.252607126,"data":"  \"http_requests_sent\": false,\n"}
+,{"stream_name":"stdout","time":41.252610286,"data":"  \"gpu_enabled\": false,\n"}
+,{"stream_name":"stdout","time":41.252613317,"data":"  \"official_score\": null,\n"}
+,{"stream_name":"stdout","time":41.252616206,"data":"  \"authorizes_submission\": false,\n"}
+,{"stream_name":"stdout","time":41.252619097,"data":"  \"helper_sha256\": \"76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0\",\n"}
+,{"stream_name":"stdout","time":41.252622117,"data":"  \"model_path\": \"/kaggle/input/models/dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/transformers/default/1\",\n"}
+,{"stream_name":"stdout","time":41.252625377,"data":"  \"python\": \"3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]\",\n"}
+,{"stream_name":"stdout","time":41.252628387,"data":"  \"package_versions\": {\n"}
+,{"stream_name":"stdout","time":41.252631507,"data":"    \"transformers\": \"5.12.1\",\n"}
+,{"stream_name":"stdout","time":41.252634867,"data":"    \"tokenizers\": \"0.22.2\",\n"}
+,{"stream_name":"stdout","time":41.252637907,"data":"    \"huggingface-hub\": \"1.33.0\",\n"}
+,{"stream_name":"stdout","time":41.252640976,"data":"    \"jinja2\": \"3.1.6\"\n"}
+,{"stream_name":"stdout","time":41.252644087,"data":"  },\n"}
+,{"stream_name":"stdout","time":41.252646936,"data":"  \"package_paths\": {\n"}
+,{"stream_name":"stdout","time":41.252649767,"data":"    \"transformers\": \"/tmp/arc3-cpu-tokenizer-site-packages/transformers/__init__.py\",\n"}
+,{"stream_name":"stdout","time":41.252654316,"data":"    \"tokenizers\": \"/tmp/arc3-cpu-tokenizer-site-packages/tokenizers/__init__.py\",\n"}
+,{"stream_name":"stdout","time":41.252657287,"data":"    \"huggingface_hub\": \"/tmp/arc3-cpu-tokenizer-site-packages/huggingface_hub/__init__.py\"\n"}
+,{"stream_name":"stdout","time":41.252660967,"data":"  },\n"}
+,{"stream_name":"stdout","time":41.252663687,"data":"  \"tokenizer_class\": \"transformers.models.qwen2.tokenization_qwen2.Qwen2Tokenizer\",\n"}
+,{"stream_name":"stdout","time":41.252666767,"data":"  \"tokenizer_is_fast\": true,\n"}
+,{"stream_name":"stdout","time":41.252669537,"data":"  \"chat_template_type\": \"str\",\n"}
+,{"stream_name":"stdout","time":41.252672707,"data":"  \"loaded_ml_frameworks\": [\n"}
+,{"stream_name":"stdout","time":41.252676106,"data":"    \"torch\"\n"}
+,{"stream_name":"stdout","time":41.252684597,"data":"  ],\n"}
+,{"stream_name":"stdout","time":41.252687557,"data":"  \"torch_cuda_initialized\": false,\n"}
+,{"stream_name":"stdout","time":41.252690617,"data":"  \"elapsed_seconds\": 24.735310207999987\n"}
+,{"stream_name":"stdout","time":41.252693577,"data":"}\n"}
+,{"stream_name":"stdout","time":41.252696367,"data":"\n"}
+,{"stream_name":"stdout","time":41.253322227,"data":"CPU tokenizer shape smoke passed. No GPU, server, HTTP or model weights used.\n"}
+,{"stream_name":"stderr","time":43.724256708,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":43.724302508,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":43.868169707,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":43.868209967,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":44.454591273,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":44.706243635,"data":"[NbConvertApp] Writing 41316 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":47.007802945,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":47.714790217,"data":"[NbConvertApp] Writing 371374 bytes to __results__.html\n"}
+]

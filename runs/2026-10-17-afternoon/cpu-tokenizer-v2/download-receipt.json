@@ -1,0 +1,26 @@
+{
+  "kernel": "koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+  "downloaded_at_utc": "2026-10-17T06:47:39.972091+00:00",
+  "files": [
+    {
+      "file": "cpu_tokenizer_smoke/dependencies.json",
+      "bytes": 1378,
+      "sha256": "46b325fc6019ecd33dc805d05c470d3bc6cdcb9986258fb53e12bf04387dc5bd"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/dependency-preparation.log",
+      "bytes": 2167,
+      "sha256": "0318eea2a147572d51865beadc63fcb309670729821b4f200f937dcaf59def7f"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/real-tokenizer-smoke.log",
+      "bytes": 2855,
+      "sha256": "1b58f9cc113b58adf75cdbe9544d962c6b5efd2a5224d8798c5371bf72f4ad6c"
+    },
+    {
+      "file": "cpu_tokenizer_smoke/tokenizer_smoke.json",
+      "bytes": 3101,
+      "sha256": "7277217ca415ac5a256133274c32f6033cd4ba19d027411eaf53e366896bc8c7"
+    }
+  ]
+}

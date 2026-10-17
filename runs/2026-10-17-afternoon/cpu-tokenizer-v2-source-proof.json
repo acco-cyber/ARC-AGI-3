@@ -1,0 +1,50 @@
+{
+  "version_observed": 2,
+  "all_cell_sources_equal": true,
+  "local_notebook_sha256": "db6fcfe1b776398f9efd3df3131f47d1a12e3ab747b8713058e7b857466e4e0a",
+  "metadata": {
+    "languageNullable": "python",
+    "kernelTypeNullable": "notebook",
+    "isPrivateNullable": true,
+    "enableGpuNullable": false,
+    "enableTpuNullable": false,
+    "enableInternetNullable": false,
+    "currentVersionNumberNullable": 2,
+    "dockerImageNullable": "gcr.io/kaggle-private-byod/python@sha256:57e612b484cf3df5026ee4dcc3cb176974b22b2bc0937fb1e16132a8be4cb13c",
+    "machineShapeNullable": "None",
+    "id": 139176054,
+    "ref": "koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+    "title": "ARC3 CPU Tokenizer Shape Smoke",
+    "author": "Koushik Rudra",
+    "slug": "arc3-cpu-tokenizer-shape-smoke",
+    "lastRunTime": "2026-10-14T06:48:51.7031428Z",
+    "language": "python",
+    "hasLanguage": true,
+    "kernelType": "notebook",
+    "hasKernelType": true,
+    "isPrivate": true,
+    "hasIsPrivate": true,
+    "enableGpu": false,
+    "hasEnableGpu": true,
+    "enableTpu": false,
+    "hasEnableTpu": true,
+    "enableInternet": false,
+    "hasEnableInternet": true,
+    "categoryIds": [],
+    "datasetDataSources": [
+      "dfranzen/pennyroyal-v253"
+    ],
+    "kernelDataSources": [],
+    "competitionDataSources": [],
+    "modelDataSources": [
+      "dfranzen/intel-qwen3.8-flash-next-w4a16-autoround/Transformers/default/1"
+    ],
+    "totalVotes": 0,
+    "currentVersionNumber": 2,
+    "hasCurrentVersionNumber": true,
+    "dockerImage": "gcr.io/kaggle-private-byod/python@sha256:57e612b484cf3df5026ee4dcc3cb176974b22b2bc0937fb1e16132a8be4cb13c",
+    "hasDockerImage": true,
+    "machineShape": "None",
+    "hasMachineShape": true
+  }
+}

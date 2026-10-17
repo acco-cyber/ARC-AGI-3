@@ -35,13 +35,18 @@ def request(path, *, query=None, payload=None, timeout=60):
         return json.load(response)
 
 
-def push_payload(directory, *, timeout_seconds):
+def push_payload(directory, *, timeout_seconds, cpu_only=False):
     directory = Path(directory)
     metadata = json.loads((directory/'kernel-metadata.json').read_text())
-    if metadata.get('machine_shape') != 'NvidiaRtxPro6000':
-        raise ValueError('Exact validated accelerator is required')
-    if not metadata.get('enable_gpu') or metadata.get('enable_internet'):
-        raise ValueError('GPU must be enabled and notebook internet disabled')
+    if metadata.get('enable_internet'):
+        raise ValueError('Notebook internet must be disabled')
+    if cpu_only:
+        if (metadata.get('enable_gpu') or metadata.get('enable_tpu')
+                or metadata.get('machine_shape') not in {None, ''}):
+            raise ValueError('CPU-only execution must not request any accelerator')
+    elif (metadata.get('machine_shape') != 'NvidiaRtxPro6000'
+          or not metadata.get('enable_gpu')):
+        raise ValueError('Exact validated GPU accelerator is required')
     notebook_path = directory/metadata['code_file']
     notebook = copy.deepcopy(json.loads(notebook_path.read_text()))
     for cell in notebook['cells']:
@@ -53,7 +58,7 @@ def push_payload(directory, *, timeout_seconds):
         'id': metadata.get('id_no'), 'slug': metadata['id'],
         'newTitle': metadata['title'], 'text': json.dumps(notebook),
         'language': metadata['language'], 'kernelType': metadata['kernel_type'],
-        'isPrivate': metadata['is_private'], 'enableGpu': True,
+        'isPrivate': metadata['is_private'], 'enableGpu': not cpu_only,
         'enableTpu': False, 'enableInternet': False,
         'datasetDataSources': metadata.get('dataset_sources', []),
         'competitionDataSources': metadata.get('competition_sources', []),
@@ -63,10 +68,11 @@ def push_payload(directory, *, timeout_seconds):
         'dockerImagePinningType': metadata['docker_image_pinning_type'],
         'dockerImage': metadata['docker_image'],
         'sessionTimeoutSeconds': int(timeout_seconds),
-        'machineShape': 'NvidiaRtxPro6000',
+        'machineShape': None if cpu_only else 'NvidiaRtxPro6000',
     }
     return payload, {'kernel': metadata['id'],
                      'notebook_sha256': hashlib.sha256(notebook_path.read_bytes()).hexdigest(),
+                     'accelerator_requested': 'cpu' if cpu_only else 'NvidiaRtxPro6000',
                      'timeout_seconds': timeout_seconds,
                      'submission_attempted': False}
 
@@ -76,6 +82,7 @@ def save_output(kernel, directory, pattern=r'(?:arc.*\.json|benchmark\.json|serv
     directory = Path(directory).resolve()
     directory.mkdir(parents=True, exist_ok=True)
     token = None
+    seen_tokens = set()
     saved = []
     while True:
         result = request('/api/v1/kernels/output', query={
@@ -102,6 +109,9 @@ def save_output(kernel, directory, pattern=r'(?:arc.*\.json|benchmark\.json|serv
         token = result.get('nextPageToken')
         if not token:
             break
+        if token in seen_tokens:
+            raise RuntimeError('Kaggle output pagination repeated a cursor')
+        seen_tokens.add(token)
     receipt = {'kernel': kernel, 'downloaded_at_utc': datetime.now(timezone.utc).isoformat(),
                'files': saved}
     (directory/'download-receipt.json').write_text(json.dumps(receipt, indent=2)+'\n')
@@ -120,6 +130,7 @@ def main():
     push.add_argument('directory')
     push.add_argument('--timeout', type=int, required=True)
     push.add_argument('--receipt', required=True)
+    push.add_argument('--cpu-only', action='store_true')
     args = parser.parse_args()
     if args.operation == 'status':
         owner, slug = args.kernel.split('/', 1)
@@ -128,7 +139,8 @@ def main():
     elif args.operation == 'output':
         print(json.dumps(save_output(args.kernel, args.directory), indent=2))
     else:
-        payload, receipt = push_payload(args.directory, timeout_seconds=args.timeout)
+        payload, receipt = push_payload(args.directory, timeout_seconds=args.timeout,
+                                        cpu_only=args.cpu_only)
         receipt['requested_at_utc'] = datetime.now(timezone.utc).isoformat()
         receipt['response'] = request('/api/v1/kernels/push', payload=payload, timeout=90)
         # New notebooks may receive a title-derived slug. Monitor the returned

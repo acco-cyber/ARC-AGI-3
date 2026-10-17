@@ -1,0 +1,24 @@
+{
+  "kernel": "koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+  "notebook_sha256": "1e562cf067132b3f6d0978c7aaac75d01a557276b7a64b60b84a67843b4bdec3",
+  "accelerator_requested": "cpu",
+  "timeout_seconds": 600,
+  "submission_attempted": false,
+  "requested_at_utc": "2026-10-17T06:38:06.404065+00:00",
+  "response": {
+    "versionNumberNullable": 1,
+    "ref": "/code/koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+    "url": "https://www.kaggle.com/code/koushikrudra/arc3-cpu-tokenizer-shape-smoke",
+    "versionNumber": 1,
+    "hasVersionNumber": true,
+    "error": "",
+    "hasError": false,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 139176054
+  },
+  "requested_kernel": "koushikrudra/arc3-cpu-tokenizer-shape-smoke"
+}

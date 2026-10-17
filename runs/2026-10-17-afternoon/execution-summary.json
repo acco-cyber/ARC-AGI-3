@@ -1,0 +1,87 @@
+{
+  "scope": "Functional smoke at2048tokens, not public score validation of65536candidate",
+  "executed_notebook_sha256": "495a0f4b7e187a4b4501343764a4b6724ed86bc618c37ed70f55c5a704ff6473",
+  "executed_archive": "Notebook/archive/arc3-lease2048-diagnostic-v1.ipynb",
+  "kernel_status": "complete",
+  "observed_mode_smoke": true,
+  "gpu_preflight": {
+    "model_inference_attempted": false,
+    "passed": true,
+    "python": "3.12.13",
+    "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": 97887
+  },
+  "functional_gameplay_passed": true,
+  "source_report_candidate_label_is_stale": true,
+  "smoke_mean_not_quality_evidence": 3.915343915343916,
+  "reported_elapsed_seconds_including_failed_probe": 852.026953458786,
+  "kernel_last_logged_seconds": 861.716896151,
+  "gameplay_wall_seconds": 184.336094,
+  "handover": {
+    "enabled": true,
+    "token_quantum": 2048,
+    "voluntary_handovers": 3,
+    "ordinary_handovers_seen": 0,
+    "max_tokens_without_action_at_handover": 4105,
+    "voluntary_handover_wait_seconds": 9.839999995620019e-05
+  },
+  "level_coverage": {
+    "game_runs": 3,
+    "unique_games": 3,
+    "expected_game_pass_coverage_complete": true,
+    "started_game_runs": 3,
+    "game_runs_with_inference": 3,
+    "won_game_runs": 0,
+    "total_levels": 21,
+    "completed_levels": 3,
+    "reached_uncompleted_levels": 3,
+    "unobserved_levels": 15,
+    "levels_with_executed_actions": 5,
+    "levels_with_non_reset_actions": 5,
+    "level_completion_fraction": 0.14285714285714285,
+    "level_action_coverage_fraction": 0.23809523809523808,
+    "level_non_reset_action_coverage_fraction": 0.23809523809523808,
+    "all_observed_games_started": true,
+    "all_expected_games_started": true,
+    "all_observed_levels_completed": false,
+    "all_expected_games_and_levels_completed": false
+  },
+  "transport_probe_valid": false,
+  "transport_probe_failure": "CPU tokenizer prompt sizing returned2 instead of2048; no timed transport phases or throughput comparison obtained. See raw client log.",
+  "official_score": 30.59,
+  "new_official_submission_attempted": false,
+  "official35_verified": false,
+  "all_public_levels_completed": false,
+  "local_cpu_tests_passed": 80,
+  "measured_gpu_quota_seconds_used": 862.141,
+  "gpu_sessions_launched": 1,
+  "additional_gpu_reload_for_tokenizer_fix": false,
+  "cpu_tokenizer_v1": {
+    "kernel_status": "error",
+    "shape_cases_all_passed": true,
+    "default_return_type": "transformers.tokenization_utils_base.BatchEncoding",
+    "default_mapping_length": 2,
+    "helper_sha256": "76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0",
+    "error": "Tokenizer smoke imported an ML framework: torch",
+    "explanation": "All three real tokenizer shape checks passed; an overly strict additional guard rejected importing the preinstalled torch package. CPU-only execution is distinct from forbidding a package import. Guard correction checks no CUDA context instead."
+  },
+  "cpu_tokenizer_v2": {
+    "kernel_status": "complete",
+    "passed": true,
+    "helper_sha256": "76c1d2aeba94c170eddc9ebbf303e5b7413dfd65240dc55f22745a4cbd9a00a0",
+    "torch_cuda_initialized": false,
+    "loaded_ml_frameworks": [
+      "torch"
+    ],
+    "runner_elapsed_seconds": 24.735310207999987,
+    "payload_token_lengths": [
+      2048,
+      8192,
+      16384
+    ],
+    "default_return_type": "transformers.tokenization_utils_base.BatchEncoding",
+    "model_weights_loaded": false,
+    "http_requests_sent": false,
+    "server_started": false
+  }
+}

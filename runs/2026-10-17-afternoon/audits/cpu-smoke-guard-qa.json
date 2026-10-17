@@ -1,0 +1,24 @@
+{
+  "scope": "AST-extracted runner guard and builder output; no actual tokenizer or GPU execution",
+  "tests": [
+    {
+      "test": "accepts_incidental_cpu_torch_import",
+      "passed": true,
+      "cuda_calls": [
+        "is_initialized"
+      ]
+    },
+    {
+      "test": "rejects_initialized_cuda",
+      "passed": true,
+      "cuda_calls": [
+        "is_initialized"
+      ]
+    },
+    {
+      "test": "cpu_metadata_alias_identical_and_dependencies_disposable",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "test": "pinned3wheels_reuses_image_light_dependencies",
+    "passed": true
+  },
+  {
+    "test": "rejects_mandatory_torch_without_installing",
+    "passed": true
+  }
+]

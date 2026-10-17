@@ -1,0 +1,14 @@
+
+Error in sitecustomize; set PYTHONVERBOSE for traceback:
+ModuleNotFoundError: No module named 'wrapt'
+[transformers] You are using a model of type `qwen4_exp` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+Traceback (most recent call last):
+  File "/kaggle/working/arc3_load_parity_probe.py", line 289, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/kaggle/working/arc3_load_parity_probe.py", line 227, in main
+    payloads = [[build_payload(tokenizer, case, phase, args.model, config.populations[phase]) for case in plan]
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/kaggle/working/arc3_load_parity_probe.py", line 109, in build_payload
+    raise RuntimeError(f'Tokenizer could not match prompt length: wanted{target}, got{actual}')
+RuntimeError: Tokenizer could not match prompt length: wanted2048, got2

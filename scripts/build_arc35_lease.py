@@ -60,8 +60,9 @@ All baseline attributions and third-party licenses apply.
 '''
     setup = notebook['cells'][1]['source']
     if diagnostic:
-        setup = replace_once(setup, "_arc_os.environ.get('ARC40_RUN_MODE', 'validation')",
-                             "_arc_os.environ.get('ARC40_RUN_MODE', 'smoke')")
+        setup = replace_once(setup,
+            "ARC40_RUN_MODE = 'competition' if ARC40_TRUE_SUBMISSION else _arc_os.environ.get('ARC40_RUN_MODE', 'validation').strip().lower()",
+            "ARC40_RUN_MODE = 'smoke'  # Fixed diagnostic budget; ignore mode overrides.")
         setup = replace_once(setup, "ARC40_EVAL_SECONDS =",
             "if ARC40_TRUE_SUBMISSION:\n    raise RuntimeError('Functional diagnostic cannot enter the competition')\nARC40_EVAL_SECONDS =")
     coverage_module = (ROOT/'scripts/arc_level_coverage.py').read_text()
@@ -85,7 +86,13 @@ All baseline attributions and third-party licenses apply.
         if not _arc35_coverage['valid_evidence']:
             raise RuntimeError('Level ledger evidence is inconsistent')
 '''.replace('QUANTUM', str(quantum)))
+    bench = replace_once(bench,
+        "'candidate': 'Franzen + Affectify D-prime, engineering revision2',",
+        f"'candidate': 'Franzen + Affectify D-prime, no-action lease {quantum}',\n            'no_action_token_quantum': {quantum},\n            'diagnostic_only': {diagnostic!r},\n            'candidate_baseline_notebook_sha256': {hashlib.sha256(BASELINE.read_bytes()).hexdigest()!r},")
     if diagnostic:
+        bench = replace_once(bench,
+            "    if ARC40_RUN_MODE == 'validation' and _arc_report['local_validation_passed']:",
+            "    if False:  # A diagnostic never emits competition packaging.")
         helper = (ROOT/'scripts/load_parity_probe.py').read_text()
         probe = '''# One bounded synthetic probe reuses the loaded server.
 # Failed probes remain diagnostic evidence; gameplay integration still runs.
@@ -116,9 +123,12 @@ except _probe_subprocess.TimeoutExpired:
         notebook['cells'].insert(17, dict(cell_type='code', metadata={},
             source=probe, execution_count=None, outputs=[]))
     notebook['cells'][24 if diagnostic else 23]['source'] = bench
+    hook_meta = notebook['metadata']['arc35_no_action_handover']
+    hook_meta['baseline_changed_cell_indices'] = [22]
+    hook_meta['changed_cell_indices'] = [23 if diagnostic else 22]
     notebook['metadata']['arc40']['default_run_mode'] = mode
     notebook['metadata']['arc35_lease_candidate'] = {
-        'diagnostic_only': diagnostic, 'token_quantum': quantum,
+        'build_revision':2, 'diagnostic_only': diagnostic, 'token_quantum': quantum,
         'baseline_sha256': hashlib.sha256(BASELINE.read_bytes()).hexdigest(),
         'coverage_module_sha256': hashlib.sha256(coverage_module.encode()).hexdigest(),
         'official_score':None, 'score_gain_established':False,

@@ -7,10 +7,12 @@ Run only in an isolated subprocess, against the already loaded local server.
 from __future__ import annotations
 
 import argparse
+from collections.abc import Mapping
 from concurrent.futures import ThreadPoolExecutor, wait
 from dataclasses import asdict, dataclass
 import hashlib
 import json
+from numbers import Integral
 from pathlib import Path
 import threading
 import time
@@ -70,6 +72,32 @@ def shape_plan(config):
                  seed=config.seed + i) for i in range(config.requests_per_phase)]
 
 
+def chat_template_token_count(rendered):
+    """Count one tokenized conversation across Transformers return shapes.
+
+    Recent tokenizers can return a BatchEncoding mapping with ``input_ids``
+    and ``attention_mask`` even without requesting tensors. Counting mapping
+    fields (or a batch dimension) silently reports two (or one) tokens. Accept
+    flat IDs and a single batch, including tensor/array values via ``tolist``;
+    reject multiple conversations rather than treating them as token IDs.
+    """
+    if isinstance(rendered, Mapping):
+        if 'input_ids' not in rendered:
+            raise ValueError('Tokenized chat-template mapping is missing input_ids')
+        rendered = rendered['input_ids']
+    if callable(getattr(rendered, 'tolist', None)):
+        rendered = rendered.tolist()
+    if not isinstance(rendered, (list, tuple)):
+        raise TypeError('Tokenized chat template must contain an input_ids sequence')
+    if rendered and isinstance(rendered[0], (list, tuple)):
+        if len(rendered) != 1:
+            raise ValueError('Expected one tokenized conversation, received multiple batches')
+        rendered = rendered[0]
+    if any(isinstance(token, bool) or not isinstance(token, Integral) for token in rendered):
+        raise TypeError('Tokenized chat-template input_ids must be a flat integer sequence')
+    return len(rendered)
+
+
 def build_payload(tokenizer, case, phase, model, population):
     """Unique prefix per phase/case avoids second-phase exact-prefix advantage.
 
@@ -97,10 +125,10 @@ def build_payload(tokenizer, case, phase, model, population):
     msgs = messages(n)
     rendered = tokenizer.apply_chat_template(msgs, tokenize=True,
         add_generation_prompt=True, enable_thinking=True, preserve_thinking=True)
-    n = min(len(tokens), max(1, n + target - len(rendered)))
+    n = min(len(tokens), max(1, n + target - chat_template_token_count(rendered)))
     for _ in range(8):
         msgs = messages(n)
-        actual = len(tokenizer.apply_chat_template(msgs, tokenize=True,
+        actual = chat_template_token_count(tokenizer.apply_chat_template(msgs, tokenize=True,
             add_generation_prompt=True, enable_thinking=True, preserve_thinking=True))
         if actual == target:
             break
