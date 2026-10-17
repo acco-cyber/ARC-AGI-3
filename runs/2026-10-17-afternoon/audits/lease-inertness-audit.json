@@ -1,0 +1,109 @@
+{
+  "scope": "Synthetic ledger semantics only; these are not recovered baseline trim events",
+  "tail_generated_tokens": 155419,
+  "token_quantum": 65536,
+  "request_boundary_step": 2048,
+  "scenarios": [
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": null,
+      "ordinary_events": [],
+      "voluntary_events": [
+        65536,
+        131072
+      ]
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 53248,
+      "ordinary_events": [
+        53248,
+        106496
+      ],
+      "voluntary_events": []
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 57344,
+      "ordinary_events": [
+        57344,
+        114688
+      ],
+      "voluntary_events": []
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 59392,
+      "ordinary_events": [
+        59392,
+        118784
+      ],
+      "voluntary_events": []
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 61440,
+      "ordinary_events": [
+        61440,
+        122880
+      ],
+      "voluntary_events": []
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 65536,
+      "ordinary_events": [
+        65536,
+        131072
+      ],
+      "voluntary_events": []
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 67584,
+      "ordinary_events": [
+        67584,
+        135168
+      ],
+      "voluntary_events": [
+        65536,
+        133120
+      ]
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 73728,
+      "ordinary_events": [
+        73728,
+        147456
+      ],
+      "voluntary_events": [
+        65536,
+        139264
+      ]
+    },
+    {
+      "assumed_ordinary_trim_interval_generated_tokens": 131072,
+      "ordinary_events": [
+        131072
+      ],
+      "voluntary_events": [
+        65536
+      ]
+    }
+  ],
+  "baseline_saved_telemetry": {
+    "request_logs": false,
+    "DIAG_CONCURRENCY": false,
+    "per_game_context_trim_events": false,
+    "per_game_gate_handover_events": false
+  },
+  "actual_tail_evidence": {
+    "terminal_no_action_tokens": 155419,
+    "elapsed_between_last_action_and_finalization_seconds": 3915.522878432001,
+    "interpretation": "Elapsed duration includes possible gate waiting. No action record exists within this interval; no proof of continuous gate ownership or no prior handovers."
+  },
+  "context_estimate": {
+    "context_window_tokens": 131072,
+    "max_output_reserved_tokens": 12288,
+    "request_safety_tokens": 512,
+    "context_budget_tokens": 118272,
+    "configured_drain_tokens": 59392,
+    "effective_drain_tokens": 59136,
+    "retained_target_tokens": 59136,
+    "limitations": "Uses estimated serialized context units, not generated-token lease units. Whole-block pruning may overshoot target, assistant-turn pruning may fire earlier, response size and prompt/token calibration vary."
+  },
+  "conclusion": "An ordinary handover at or before65536 since previous handover resets the lease and prevents extra handover. This is deliberate opportunistic behavior: fullcandidate onlyaddsrotation when ordinary pruning leaves a longer uninterrupted lease. Aggregate finaltail statistics alone cannot justifyexpectedactivation orscoregain. Instrumented voluntary_handovers=0 means policywasnotexercised."
+}

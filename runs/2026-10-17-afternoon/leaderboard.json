@@ -1,0 +1,205 @@
+{
+  "submissions": [
+    {
+      "teamNameNullable": "Tufa Labs",
+      "scoreNullable": "68.91",
+      "teamId": 15486995,
+      "teamName": "Tufa Labs",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T16:01:24.4933333Z",
+      "score": "68.91",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Yi-Chia Chen",
+      "scoreNullable": "67.49",
+      "teamId": 15499660,
+      "teamName": "Yi-Chia Chen",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T18:53:06.89Z",
+      "score": "67.49",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "mtg",
+      "scoreNullable": "50.37",
+      "teamId": 16153655,
+      "teamName": "mtg",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T08:00:44.0266667Z",
+      "score": "50.37",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "the last dance \ud83d\udd7a",
+      "scoreNullable": "49.85",
+      "teamId": 16021367,
+      "teamName": "the last dance \ud83d\udd7a",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-15T22:00:15.1866667Z",
+      "score": "49.85",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Son & Mark & Ronen",
+      "scoreNullable": "48.92",
+      "teamId": 15605182,
+      "teamName": "Son & Mark & Ronen",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T16:21:52.2866667Z",
+      "score": "48.92",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "\u5fa9\u6d3b\u306e\u6df7\u30c6\u30ad\u30b9\u30c8",
+      "scoreNullable": "45.11",
+      "teamId": 16569113,
+      "teamName": "\u5fa9\u6d3b\u306e\u6df7\u30c6\u30ad\u30b9\u30c8",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T04:40:50.8766667Z",
+      "score": "45.11",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Majkel1337",
+      "scoreNullable": "44.84",
+      "teamId": 16958599,
+      "teamName": "Majkel1337",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-15T16:57:08.3633333Z",
+      "score": "44.84",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "NVARC3",
+      "scoreNullable": "43.94",
+      "teamId": 15770880,
+      "teamName": "NVARC3",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T14:26:03.7933333Z",
+      "score": "43.94",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "artificialagencylab.com",
+      "scoreNullable": "41.74",
+      "teamId": 16132261,
+      "teamName": "artificialagencylab.com",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T21:10:24.17Z",
+      "score": "41.74",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "ARC Slayers",
+      "scoreNullable": "41.19",
+      "teamId": 16447222,
+      "teamName": "ARC Slayers",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T23:09:18.2566667Z",
+      "score": "41.19",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Grigoriy Zatravkin",
+      "scoreNullable": "40.63",
+      "teamId": 16490178,
+      "teamName": "Grigoriy Zatravkin",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-15T23:47:07.5333333Z",
+      "score": "40.63",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Vineeth Sai Varikuntla",
+      "scoreNullable": "40.09",
+      "teamId": 16537511,
+      "teamName": "Vineeth Sai Varikuntla",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T02:06:26.3633333Z",
+      "score": "40.09",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "dreach.ai",
+      "scoreNullable": "39.11",
+      "teamId": 16805955,
+      "teamName": "dreach.ai",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-14T00:04:22.0733333Z",
+      "score": "39.11",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "\u5927\u962a\u516c\u7acb\u5927\u5b66\u751fAI\u30c1\u30fc\u30e0",
+      "scoreNullable": "38.98",
+      "teamId": 16754530,
+      "teamName": "\u5927\u962a\u516c\u7acb\u5927\u5b66\u751fAI\u30c1\u30fc\u30e0",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T11:47:53.23Z",
+      "score": "38.98",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "AquaUrsa Research",
+      "scoreNullable": "38.97",
+      "teamId": 15488763,
+      "teamName": "AquaUrsa Research",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T00:02:10.67Z",
+      "score": "38.97",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "Nhan Duc Nguyen",
+      "scoreNullable": "38.84",
+      "teamId": 16958955,
+      "teamName": "Nhan Duc Nguyen",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T04:23:25.7766667Z",
+      "score": "38.84",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "speed, my mom is kinda homless",
+      "scoreNullable": "38.22",
+      "teamId": 16253766,
+      "teamName": "speed, my mom is kinda homless",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T00:27:49.08Z",
+      "score": "38.22",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "fshindo",
+      "scoreNullable": "38.20",
+      "teamId": 16992721,
+      "teamName": "fshindo",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T15:03:45.4066667Z",
+      "score": "38.20",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "SparseTech",
+      "scoreNullable": "37.98",
+      "teamId": 16760493,
+      "teamName": "SparseTech",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-15T23:55:21.0366667Z",
+      "score": "37.98",
+      "hasScore": true
+    },
+    {
+      "teamNameNullable": "mikelou1",
+      "scoreNullable": "37.27",
+      "teamId": 16273949,
+      "teamName": "mikelou1",
+      "hasTeamName": true,
+      "submissionDate": "2026-10-16T00:11:11.0433333Z",
+      "score": "37.27",
+      "hasScore": true
+    }
+  ],
+  "nextPageToken": "CfDJ8JDwKpgsc5hJpcljKjpYpOE_tnSByp5Ddojt1zzySCyWqFJNEy9axMBV7TKtBzThA2Ivtfn7MFg3oHrLOahLiVE"
+}

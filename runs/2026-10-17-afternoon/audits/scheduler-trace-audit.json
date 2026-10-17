@@ -1,0 +1,51 @@
+{
+  "source": "runs/2026-10-17/full-validation/benchmark.json",
+  "scope": "Observed public run; no counterfactual inference or hidden-score prediction",
+  "active_formula_verified": "cell22 _FP_SOURCE install_d plus completed log #OURS_FORM version=d_prime; not cell6 defaults",
+  "active_streams": 10,
+  "public_games": 25,
+  "live_reference_games": 110,
+  "generated_tokens_total": 4595491,
+  "thresholds": [
+    {
+      "threshold_tokens": 32768,
+      "terminal_no_action_tails_crossing": 2,
+      "terminal_tail_tokens": 198720,
+      "terminal_tail_suffix_after_threshold_tokens": 133184,
+      "terminal_tail_suffix_fraction_all_tokens": 0.02898145160114556,
+      "positive_action_intervals_crossing": 7,
+      "positive_action_intervals_in_won_runs_crossing": 3
+    },
+    {
+      "threshold_tokens": 49152,
+      "terminal_no_action_tails_crossing": 1,
+      "terminal_tail_tokens": 155419,
+      "terminal_tail_suffix_after_threshold_tokens": 106267,
+      "terminal_tail_suffix_fraction_all_tokens": 0.02312418847082934,
+      "positive_action_intervals_crossing": 2,
+      "positive_action_intervals_in_won_runs_crossing": 0
+    },
+    {
+      "threshold_tokens": 65536,
+      "terminal_no_action_tails_crossing": 1,
+      "terminal_tail_tokens": 155419,
+      "terminal_tail_suffix_after_threshold_tokens": 89883,
+      "terminal_tail_suffix_fraction_all_tokens": 0.019558954636185774,
+      "positive_action_intervals_crossing": 1,
+      "positive_action_intervals_in_won_runs_crossing": 0
+    }
+  ],
+  "interpretation": "Suffix counts are an opportunity diagnostic, not GPU savings: voluntary handover resumes games later and may add prefill cost. No completed action or reasoning should be discarded.",
+  "recommended_first_candidate": {
+    "threshold_tokens": 65536,
+    "policy": "At existing pre-request boundary only, after consecutive generated tokens since last executed engine action cross threshold, voluntarily yield gate slot with fresh D-prime snapshot. Retain history, reasoning, prompt and current warm-cache request priority. Reset stall handover cursor so repeated polling does not requeue every response. Default off pending matched A/B.",
+    "excluded": "No game-ID routing, known answers, new model, action cap, token termination or continuation bonus changes."
+  },
+  "matched_ab": {
+    "candidate_count": 1,
+    "workload": "Exactly same25publicgames; sameweights, prompts, server, seed(ifvalid),10streams and7254.545solver_seconds for baseline andcandidate. Score public mean and per-game changes, noactiontail fraction, cancellationlevel coverage, totalgeneratedtokens,walltime,servedprefill/cache metrics. Block metric edits after outcomes.",
+    "compute_cap": "At most one newcandidate public run (~121minutes solver) if exact baseline acceptable. If baseline reproducibility absent, paired A/B uses2x121minutes plusstartup. Abort technicalsmoke on genuine runtime failure; smoke cannot estimatefullscore.",
+    "queue_parity": "CPU110-clone test admission, snapshotrefresh, clockfade, fairness andcancellation only; publicly duplicated trajectories cannot validatehidden distribution or35threshold.",
+    "promotion": "Require matched public candidate noninferiority plus bounded overhead and valid completeevidence. Officialscore35beforeanunseensubmissioncannotbe guaranteed."
+  }
+}

@@ -3,6 +3,12 @@
 Experimental notebooks for the 2026 Kaggle ARC-AGI-3 competition. The current
 engineering target is an official score above 40; no such result is claimed.
 
+The latest observed official score remains **30.59** (16 October2026).
+The17 October admission experiment adds a conservative no-action handover and
+an evidence-only level ledger. The completed baseline reached all25 public
+games but completed114 of183 levels; it did not solve every level.
+See [the experiment and GPU diagnostic](docs/ARC35_LEASE_2026-10-17.md).
+
 ## Current candidate
 
 [arc3-target40-engineered.ipynb](Notebook/arc3-target40-engineered.ipynb) retains

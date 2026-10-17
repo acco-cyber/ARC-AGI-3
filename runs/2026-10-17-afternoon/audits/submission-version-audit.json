@@ -1,0 +1,1386 @@
+{
+  "source_sha256": "535f2a6b9063b36cc7899503b5419b1f8aebf334a9aa26f048ed53dcc5f7db9f",
+  "total_submissions": 171,
+  "status_counts": {
+    "complete": 123,
+    "error": 48
+  },
+  "version_groups": [
+    {
+      "kernel_path": "/code/koushikrudra/arc3-target40-engineered-harness",
+      "script_version": "358880096",
+      "completed_submissions": 1,
+      "minimum_score": 30.59,
+      "maximum_score": 30.59,
+      "mean_score": 30.59,
+      "submissions": [
+        {
+          "ref": 57257762,
+          "date": "2026-10-16T06:14:08.460Z",
+          "publicScore": "30.59"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-milestone-2-solution",
+      "script_version": "354340320",
+      "completed_submissions": 5,
+      "minimum_score": 25.47,
+      "maximum_score": 27.22,
+      "mean_score": 26.344,
+      "submissions": [
+        {
+          "ref": 56856536,
+          "date": "2026-10-05T16:10:42.640Z",
+          "publicScore": "25.47"
+        },
+        {
+          "ref": 56813120,
+          "date": "2026-10-04T03:32:11.510Z",
+          "publicScore": "26.89"
+        },
+        {
+          "ref": 56786939,
+          "date": "2026-10-03T01:49:01.067Z",
+          "publicScore": "27.22"
+        },
+        {
+          "ref": 56763714,
+          "date": "2026-10-02T02:14:37.300Z",
+          "publicScore": "25.61"
+        },
+        {
+          "ref": 56748874,
+          "date": "2026-10-01T09:59:05.150Z",
+          "publicScore": "26.53"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/duck-not-a-cock",
+      "script_version": "348279226",
+      "completed_submissions": 14,
+      "minimum_score": 1.94,
+      "maximum_score": 3.68,
+      "mean_score": 2.854285714285714,
+      "submissions": [
+        {
+          "ref": 56714461,
+          "date": "2026-09-30T17:24:55.380Z",
+          "publicScore": "2.55"
+        },
+        {
+          "ref": 56665271,
+          "date": "2026-09-29T06:25:38.933Z",
+          "publicScore": "3.24"
+        },
+        {
+          "ref": 56557001,
+          "date": "2026-09-25T17:52:31.577Z",
+          "publicScore": "2.29"
+        },
+        {
+          "ref": 56471654,
+          "date": "2026-09-22T18:29:38.523Z",
+          "publicScore": "2.98"
+        },
+        {
+          "ref": 56413976,
+          "date": "2026-09-21T03:07:23.377Z",
+          "publicScore": "2.54"
+        },
+        {
+          "ref": 56365831,
+          "date": "2026-09-19T16:43:45.380Z",
+          "publicScore": "2.44"
+        },
+        {
+          "ref": 56338388,
+          "date": "2026-09-18T19:09:18.440Z",
+          "publicScore": "3.35"
+        },
+        {
+          "ref": 56242532,
+          "date": "2026-09-15T01:35:44.217Z",
+          "publicScore": "3.68"
+        },
+        {
+          "ref": 56206740,
+          "date": "2026-09-13T12:19:19.953Z",
+          "publicScore": "2.73"
+        },
+        {
+          "ref": 56189610,
+          "date": "2026-09-12T16:47:34.267Z",
+          "publicScore": "2.42"
+        },
+        {
+          "ref": 56171907,
+          "date": "2026-09-11T19:49:08.960Z",
+          "publicScore": "3.59"
+        },
+        {
+          "ref": 56140365,
+          "date": "2026-09-10T08:02:53.723Z",
+          "publicScore": "1.94"
+        },
+        {
+          "ref": 56120167,
+          "date": "2026-09-09T10:23:01.040Z",
+          "publicScore": "3.67"
+        },
+        {
+          "ref": 56104794,
+          "date": "2026-09-08T18:35:02.040Z",
+          "publicScore": "2.54"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/duck-qwen3-8-flash-next-nvfp4-mtp",
+      "script_version": "346564101",
+      "completed_submissions": 2,
+      "minimum_score": 1.83,
+      "maximum_score": 3.11,
+      "mean_score": 2.4699999999999998,
+      "submissions": [
+        {
+          "ref": 55956286,
+          "date": "2026-09-02T06:32:27.257Z",
+          "publicScore": "1.83"
+        },
+        {
+          "ref": 55946375,
+          "date": "2026-09-01T19:10:21.440Z",
+          "publicScore": "3.11"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/submissions/55922395/55922395.raw",
+      "script_version": null,
+      "completed_submissions": 1,
+      "minimum_score": 1.96,
+      "maximum_score": 1.96,
+      "mean_score": 1.96,
+      "submissions": [
+        {
+          "ref": 55922395,
+          "date": "2026-08-31T18:53:06.863Z",
+          "publicScore": "1.96"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookfef7632294",
+      "script_version": "343545176",
+      "completed_submissions": 2,
+      "minimum_score": 1.43,
+      "maximum_score": 1.81,
+      "mean_score": 1.62,
+      "submissions": [
+        {
+          "ref": 55673066,
+          "date": "2026-08-21T16:22:34.160Z",
+          "publicScore": "1.43"
+        },
+        {
+          "ref": 55631154,
+          "date": "2026-08-19T20:11:52.943Z",
+          "publicScore": "1.81"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookfef7632294",
+      "script_version": "346114718",
+      "completed_submissions": 1,
+      "minimum_score": 1.65,
+      "maximum_score": 1.65,
+      "mean_score": 1.65,
+      "submissions": [
+        {
+          "ref": 55897736,
+          "date": "2026-08-30T18:28:29.237Z",
+          "publicScore": "1.65"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/taaf-model-20260815-q38-p1",
+      "script_version": "343218982",
+      "completed_submissions": 1,
+      "minimum_score": 1.46,
+      "maximum_score": 1.46,
+      "mean_score": 1.46,
+      "submissions": [
+        {
+          "ref": 55599717,
+          "date": "2026-08-18T11:24:24.517Z",
+          "publicScore": "1.46"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "341307567",
+      "completed_submissions": 2,
+      "minimum_score": 1.02,
+      "maximum_score": 1.38,
+      "mean_score": 1.2,
+      "submissions": [
+        {
+          "ref": 55449894,
+          "date": "2026-08-12T05:35:56.220Z",
+          "publicScore": "1.02"
+        },
+        {
+          "ref": 55388303,
+          "date": "2026-08-09T19:27:22.117Z",
+          "publicScore": "1.38"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookd444f158e0",
+      "script_version": "336701816",
+      "completed_submissions": 4,
+      "minimum_score": 0.82,
+      "maximum_score": 1.25,
+      "mean_score": 1.0275,
+      "submissions": [
+        {
+          "ref": 54943462,
+          "date": "2026-07-24T05:09:05.697Z",
+          "publicScore": "0.82"
+        },
+        {
+          "ref": 54905990,
+          "date": "2026-07-22T15:01:32.523Z",
+          "publicScore": "0.94"
+        },
+        {
+          "ref": 54873323,
+          "date": "2026-07-21T08:53:32.633Z",
+          "publicScore": "1.25"
+        },
+        {
+          "ref": 54854403,
+          "date": "2026-07-20T13:20:46.620Z",
+          "publicScore": "1.10"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "341770624",
+      "completed_submissions": 4,
+      "minimum_score": 0.78,
+      "maximum_score": 1.15,
+      "mean_score": 1.005,
+      "submissions": [
+        {
+          "ref": 55524674,
+          "date": "2026-08-15T09:39:14.250Z",
+          "publicScore": "0.78"
+        },
+        {
+          "ref": 55503378,
+          "date": "2026-08-14T10:32:25.817Z",
+          "publicScore": "1.15"
+        },
+        {
+          "ref": 55490439,
+          "date": "2026-08-13T19:53:18.540Z",
+          "publicScore": "1.06"
+        },
+        {
+          "ref": 55440526,
+          "date": "2026-08-11T19:20:12.837Z",
+          "publicScore": "1.03"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookb0c767c0c5",
+      "script_version": "342755607",
+      "completed_submissions": 1,
+      "minimum_score": 1.13,
+      "maximum_score": 1.13,
+      "mean_score": 1.13,
+      "submissions": [
+        {
+          "ref": 55551512,
+          "date": "2026-08-16T11:24:58.003Z",
+          "publicScore": "1.13"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc3-duck-v12-1d7d88",
+      "script_version": "339951558",
+      "completed_submissions": 3,
+      "minimum_score": 0.87,
+      "maximum_score": 1.12,
+      "mean_score": 0.9533333333333334,
+      "submissions": [
+        {
+          "ref": 55275952,
+          "date": "2026-08-05T16:37:53.883Z",
+          "publicScore": "0.87"
+        },
+        {
+          "ref": 55240601,
+          "date": "2026-08-04T13:01:40.200Z",
+          "publicScore": "0.87"
+        },
+        {
+          "ref": 55217312,
+          "date": "2026-08-03T16:53:49.377Z",
+          "publicScore": "1.12"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookfef7632294",
+      "script_version": "344450964",
+      "completed_submissions": 1,
+      "minimum_score": 1.08,
+      "maximum_score": 1.08,
+      "mean_score": 1.08,
+      "submissions": [
+        {
+          "ref": 55731762,
+          "date": "2026-08-24T03:37:32.327Z",
+          "publicScore": "1.08"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookd444f158e0",
+      "script_version": "332102147",
+      "completed_submissions": 5,
+      "minimum_score": 0.82,
+      "maximum_score": 1.08,
+      "mean_score": 0.908,
+      "submissions": [
+        {
+          "ref": 54488072,
+          "date": "2026-07-09T08:48:11.443Z",
+          "publicScore": "0.82"
+        },
+        {
+          "ref": 54452078,
+          "date": "2026-07-08T06:20:21.603Z",
+          "publicScore": "0.90"
+        },
+        {
+          "ref": 54419342,
+          "date": "2026-07-07T06:58:21.653Z",
+          "publicScore": "1.08"
+        },
+        {
+          "ref": 54396204,
+          "date": "2026-07-06T13:26:33.517Z",
+          "publicScore": "0.82"
+        },
+        {
+          "ref": 54264151,
+          "date": "2026-07-02T12:06:54.763Z",
+          "publicScore": "0.92"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc3-duck-v12-1d7d88",
+      "script_version": "339545224",
+      "completed_submissions": 2,
+      "minimum_score": 0.93,
+      "maximum_score": 1.07,
+      "mean_score": 1.0,
+      "submissions": [
+        {
+          "ref": 55186692,
+          "date": "2026-08-02T13:19:17.957Z",
+          "publicScore": "0.93"
+        },
+        {
+          "ref": 55168698,
+          "date": "2026-08-01T18:15:13.847Z",
+          "publicScore": "1.07"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "338086083",
+      "completed_submissions": 2,
+      "minimum_score": 0.86,
+      "maximum_score": 1.06,
+      "mean_score": 0.96,
+      "submissions": [
+        {
+          "ref": 55030817,
+          "date": "2026-07-27T14:11:06.277Z",
+          "publicScore": "0.86"
+        },
+        {
+          "ref": 55002746,
+          "date": "2026-07-26T13:48:09.020Z",
+          "publicScore": "1.06"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/taaf-duck-harness-kaggle-share",
+      "script_version": "332897209",
+      "completed_submissions": 3,
+      "minimum_score": 0.75,
+      "maximum_score": 1.05,
+      "mean_score": 0.9033333333333333,
+      "submissions": [
+        {
+          "ref": 54777941,
+          "date": "2026-07-17T07:38:54.507Z",
+          "publicScore": "0.91"
+        },
+        {
+          "ref": 54757824,
+          "date": "2026-07-16T09:59:25.553Z",
+          "publicScore": "1.05"
+        },
+        {
+          "ref": 54363712,
+          "date": "2026-07-05T13:38:16.190Z",
+          "publicScore": "0.75"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "338871506",
+      "completed_submissions": 3,
+      "minimum_score": 0.82,
+      "maximum_score": 1.03,
+      "mean_score": 0.9533333333333334,
+      "submissions": [
+        {
+          "ref": 55320768,
+          "date": "2026-08-07T09:07:38.973Z",
+          "publicScore": "1.01"
+        },
+        {
+          "ref": 55294913,
+          "date": "2026-08-06T09:24:37.437Z",
+          "publicScore": "0.82"
+        },
+        {
+          "ref": 55087619,
+          "date": "2026-07-29T16:44:03.177Z",
+          "publicScore": "1.03"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/taaf-duck-harness-kaggle",
+      "script_version": "331803775",
+      "completed_submissions": 6,
+      "minimum_score": 0.62,
+      "maximum_score": 1.03,
+      "mean_score": 0.86,
+      "submissions": [
+        {
+          "ref": 54720805,
+          "date": "2026-07-15T10:02:19.913Z",
+          "publicScore": "0.80"
+        },
+        {
+          "ref": 54695312,
+          "date": "2026-07-14T18:04:16.710Z",
+          "publicScore": "0.88"
+        },
+        {
+          "ref": 54602591,
+          "date": "2026-07-12T09:22:38.060Z",
+          "publicScore": "0.82"
+        },
+        {
+          "ref": 54566341,
+          "date": "2026-07-11T09:07:54.370Z",
+          "publicScore": "1.03"
+        },
+        {
+          "ref": 54525149,
+          "date": "2026-07-10T11:06:31.810Z",
+          "publicScore": "1.01"
+        },
+        {
+          "ref": 54229856,
+          "date": "2026-07-01T11:16:41.563Z",
+          "publicScore": "0.62"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/taaf-duck-harness-kaggle-share-resubmission-71bd4f",
+      "script_version": "336297676",
+      "completed_submissions": 2,
+      "minimum_score": 0.59,
+      "maximum_score": 0.97,
+      "mean_score": 0.78,
+      "submissions": [
+        {
+          "ref": 54820734,
+          "date": "2026-07-19T02:59:22.020Z",
+          "publicScore": "0.59"
+        },
+        {
+          "ref": 54813161,
+          "date": "2026-07-18T17:43:20.923Z",
+          "publicScore": "0.97"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookfef7632294",
+      "script_version": "344774986",
+      "completed_submissions": 1,
+      "minimum_score": 0.95,
+      "maximum_score": 0.95,
+      "mean_score": 0.95,
+      "submissions": [
+        {
+          "ref": 55762125,
+          "date": "2026-08-25T05:29:45.103Z",
+          "publicScore": "0.95"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "341538842",
+      "completed_submissions": 1,
+      "minimum_score": 0.95,
+      "maximum_score": 0.95,
+      "mean_score": 0.95,
+      "submissions": [
+        {
+          "ref": 55414711,
+          "date": "2026-08-10T19:22:06.647Z",
+          "publicScore": "0.95"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebook445e077772",
+      "script_version": "337446986",
+      "completed_submissions": 1,
+      "minimum_score": 0.95,
+      "maximum_score": 0.95,
+      "mean_score": 0.95,
+      "submissions": [
+        {
+          "ref": 54931546,
+          "date": "2026-07-23T15:41:08.437Z",
+          "publicScore": "0.95"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "339325300",
+      "completed_submissions": 1,
+      "minimum_score": 0.74,
+      "maximum_score": 0.74,
+      "mean_score": 0.74,
+      "submissions": [
+        {
+          "ref": 55141733,
+          "date": "2026-07-31T15:46:11.463Z",
+          "publicScore": "0.74"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/watch-out-something-is-comming",
+      "script_version": "340978468",
+      "completed_submissions": 1,
+      "minimum_score": 0.72,
+      "maximum_score": 0.72,
+      "mean_score": 0.72,
+      "submissions": [
+        {
+          "ref": 55347873,
+          "date": "2026-08-08T10:30:21.763Z",
+          "publicScore": "0.72"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookbb3f1995b8",
+      "script_version": "332739552",
+      "completed_submissions": 1,
+      "minimum_score": 0.56,
+      "maximum_score": 0.56,
+      "mean_score": 0.56,
+      "submissions": [
+        {
+          "ref": 54339665,
+          "date": "2026-07-04T18:58:06.720Z",
+          "publicScore": "0.56"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "309852658",
+      "completed_submissions": 1,
+      "minimum_score": 0.44,
+      "maximum_score": 0.44,
+      "mean_score": 0.44,
+      "submissions": [
+        {
+          "ref": 51569010,
+          "date": "2026-04-08T07:32:10.287Z",
+          "publicScore": "0.44"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebooke6b7c21f12",
+      "script_version": "330946570",
+      "completed_submissions": 1,
+      "minimum_score": 0.35,
+      "maximum_score": 0.35,
+      "mean_score": 0.35,
+      "submissions": [
+        {
+          "ref": 54128750,
+          "date": "2026-06-28T05:14:34.363Z",
+          "publicScore": "0.35"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc-agi-3-a-solver-keyborad",
+      "script_version": "330755790",
+      "completed_submissions": 1,
+      "minimum_score": 0.34,
+      "maximum_score": 0.34,
+      "mean_score": 0.34,
+      "submissions": [
+        {
+          "ref": 54103908,
+          "date": "2026-06-27T09:44:22.857Z",
+          "publicScore": "0.34"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/0-35-forge-v16-trigger-aware-bfs",
+      "script_version": "308981290",
+      "completed_submissions": 1,
+      "minimum_score": 0.34,
+      "maximum_score": 0.34,
+      "mean_score": 0.34,
+      "submissions": [
+        {
+          "ref": 51487620,
+          "date": "2026-04-04T16:37:58.860Z",
+          "publicScore": "0.34"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/notebook-need-luck",
+      "script_version": "324284659",
+      "completed_submissions": 3,
+      "minimum_score": 0.19,
+      "maximum_score": 0.33,
+      "mean_score": 0.26333333333333336,
+      "submissions": [
+        {
+          "ref": 53394951,
+          "date": "2026-06-05T14:18:09.493Z",
+          "publicScore": "0.19"
+        },
+        {
+          "ref": 53350009,
+          "date": "2026-06-04T05:10:45.193Z",
+          "publicScore": "0.33"
+        },
+        {
+          "ref": 53337022,
+          "date": "2026-06-03T17:58:00.727Z",
+          "publicScore": "0.27"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "312866118",
+      "completed_submissions": 1,
+      "minimum_score": 0.33,
+      "maximum_score": 0.33,
+      "mean_score": 0.33,
+      "submissions": [
+        {
+          "ref": 51855968,
+          "date": "2026-04-19T15:05:47.990Z",
+          "publicScore": "0.33"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc-prize-2026-arc-agi-3-starter",
+      "script_version": "330467850",
+      "completed_submissions": 1,
+      "minimum_score": 0.32,
+      "maximum_score": 0.32,
+      "mean_score": 0.32,
+      "submissions": [
+        {
+          "ref": 54066941,
+          "date": "2026-06-26T05:09:26.930Z",
+          "publicScore": "0.32"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc26-3-agent-v15",
+      "script_version": "317862914",
+      "completed_submissions": 1,
+      "minimum_score": 0.3,
+      "maximum_score": 0.3,
+      "mean_score": 0.3,
+      "submissions": [
+        {
+          "ref": 52484252,
+          "date": "2026-05-09T13:09:42.473Z",
+          "publicScore": "0.30"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/forge-arc-agi-3-agent",
+      "script_version": "307879237",
+      "completed_submissions": 1,
+      "minimum_score": 0.3,
+      "maximum_score": 0.3,
+      "mean_score": 0.3,
+      "submissions": [
+        {
+          "ref": 51372332,
+          "date": "2026-03-31T06:27:57.873Z",
+          "publicScore": "0.30"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebook3199fdd726",
+      "script_version": "331305702",
+      "completed_submissions": 1,
+      "minimum_score": 0.28,
+      "maximum_score": 0.28,
+      "mean_score": 0.28,
+      "submissions": [
+        {
+          "ref": 54171864,
+          "date": "2026-06-29T13:55:25.950Z",
+          "publicScore": "0.28"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/forge-arc-agi-3-agent-937823",
+      "script_version": "308662892",
+      "completed_submissions": 1,
+      "minimum_score": 0.27,
+      "maximum_score": 0.27,
+      "mean_score": 0.27,
+      "submissions": [
+        {
+          "ref": 51455288,
+          "date": "2026-04-03T11:34:36.200Z",
+          "publicScore": "0.27"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "310434973",
+      "completed_submissions": 1,
+      "minimum_score": 0.26,
+      "maximum_score": 0.26,
+      "mean_score": 0.26,
+      "submissions": [
+        {
+          "ref": 51617911,
+          "date": "2026-04-10T07:58:40.070Z",
+          "publicScore": "0.26"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-v23-need-luck-exact-a",
+      "script_version": "325208548",
+      "completed_submissions": 1,
+      "minimum_score": 0.25,
+      "maximum_score": 0.25,
+      "mean_score": 0.25,
+      "submissions": [
+        {
+          "ref": 53454823,
+          "date": "2026-06-07T15:40:18.740Z",
+          "publicScore": "0.25"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-v19-cnn-bias",
+      "script_version": "322771449",
+      "completed_submissions": 1,
+      "minimum_score": 0.25,
+      "maximum_score": 0.25,
+      "mean_score": 0.25,
+      "submissions": [
+        {
+          "ref": 53118228,
+          "date": "2026-05-28T14:07:00.550Z",
+          "publicScore": "0.25"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "310710495",
+      "completed_submissions": 1,
+      "minimum_score": 0.25,
+      "maximum_score": 0.25,
+      "mean_score": 0.25,
+      "submissions": [
+        {
+          "ref": 51645542,
+          "date": "2026-04-11T09:19:09.220Z",
+          "publicScore": "0.25"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/forge-arc-agi-3-agent-e90c60",
+      "script_version": "308460768",
+      "completed_submissions": 1,
+      "minimum_score": 0.25,
+      "maximum_score": 0.25,
+      "mean_score": 0.25,
+      "submissions": [
+        {
+          "ref": 51435977,
+          "date": "2026-04-02T14:14:29.377Z",
+          "publicScore": "0.25"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookfd692c4ec7",
+      "script_version": "307883156",
+      "completed_submissions": 1,
+      "minimum_score": 0.24,
+      "maximum_score": 0.24,
+      "mean_score": 0.24,
+      "submissions": [
+        {
+          "ref": 51373000,
+          "date": "2026-03-31T06:47:37.020Z",
+          "publicScore": "0.24"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/forge-arc-agi-3-agent",
+      "script_version": "307797158",
+      "completed_submissions": 1,
+      "minimum_score": 0.24,
+      "maximum_score": 0.24,
+      "mean_score": 0.24,
+      "submissions": [
+        {
+          "ref": 51361389,
+          "date": "2026-03-30T20:05:22.530Z",
+          "publicScore": "0.24"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc-agi-3-persistent-memory-bfs-arc-solver",
+      "script_version": "323998777",
+      "completed_submissions": 1,
+      "minimum_score": 0.23,
+      "maximum_score": 0.23,
+      "mean_score": 0.23,
+      "submissions": [
+        {
+          "ref": 53300613,
+          "date": "2026-06-02T18:23:17.853Z",
+          "publicScore": "0.23"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "315845403",
+      "completed_submissions": 1,
+      "minimum_score": 0.23,
+      "maximum_score": 0.23,
+      "mean_score": 0.23,
+      "submissions": [
+        {
+          "ref": 52238515,
+          "date": "2026-05-01T14:36:44.307Z",
+          "publicScore": "0.23"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/forge-arc-agi-3-agent-0e0348",
+      "script_version": "308207610",
+      "completed_submissions": 1,
+      "minimum_score": 0.23,
+      "maximum_score": 0.23,
+      "mean_score": 0.23,
+      "submissions": [
+        {
+          "ref": 51410836,
+          "date": "2026-04-01T13:52:31.793Z",
+          "publicScore": "0.23"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebook7dd6e98f6d",
+      "script_version": "326011332",
+      "completed_submissions": 1,
+      "minimum_score": 0.22,
+      "maximum_score": 0.22,
+      "mean_score": 0.22,
+      "submissions": [
+        {
+          "ref": 53542828,
+          "date": "2026-06-10T17:12:34.097Z",
+          "publicScore": "0.22"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-power-wide-deep",
+      "script_version": "323243514",
+      "completed_submissions": 1,
+      "minimum_score": 0.22,
+      "maximum_score": 0.22,
+      "mean_score": 0.22,
+      "submissions": [
+        {
+          "ref": 53189251,
+          "date": "2026-05-30T15:33:10.180Z",
+          "publicScore": "0.22"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookc9e73920d9",
+      "script_version": "327585521",
+      "completed_submissions": 1,
+      "minimum_score": 0.21,
+      "maximum_score": 0.21,
+      "mean_score": 0.21,
+      "submissions": [
+        {
+          "ref": 53738163,
+          "date": "2026-06-16T09:05:25.333Z",
+          "publicScore": "0.21"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "329297925",
+      "completed_submissions": 1,
+      "minimum_score": 0.2,
+      "maximum_score": 0.2,
+      "mean_score": 0.2,
+      "submissions": [
+        {
+          "ref": 53923716,
+          "date": "2026-06-21T20:06:20.180Z",
+          "publicScore": "0.20"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-omega-planner-deep",
+      "script_version": "321263557",
+      "completed_submissions": 1,
+      "minimum_score": 0.2,
+      "maximum_score": 0.2,
+      "mean_score": 0.2,
+      "submissions": [
+        {
+          "ref": 52911661,
+          "date": "2026-05-22T04:04:45.927Z",
+          "publicScore": "0.20"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "311339961",
+      "completed_submissions": 1,
+      "minimum_score": 0.2,
+      "maximum_score": 0.2,
+      "mean_score": 0.2,
+      "submissions": [
+        {
+          "ref": 51701996,
+          "date": "2026-04-13T19:37:08.583Z",
+          "publicScore": "0.20"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "311054993",
+      "completed_submissions": 1,
+      "minimum_score": 0.2,
+      "maximum_score": 0.2,
+      "mean_score": 0.2,
+      "submissions": [
+        {
+          "ref": 51676993,
+          "date": "2026-04-12T17:47:33.440Z",
+          "publicScore": "0.20"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-v25-044-blast-h100",
+      "script_version": "325539685",
+      "completed_submissions": 1,
+      "minimum_score": 0.19,
+      "maximum_score": 0.19,
+      "mean_score": 0.19,
+      "submissions": [
+        {
+          "ref": 53495189,
+          "date": "2026-06-09T04:53:53.823Z",
+          "publicScore": "0.19"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/forge-arc-agi-3-agent-0e0348",
+      "script_version": "308368970",
+      "completed_submissions": 1,
+      "minimum_score": 0.19,
+      "maximum_score": 0.19,
+      "mean_score": 0.19,
+      "submissions": [
+        {
+          "ref": 51427689,
+          "date": "2026-04-02T07:10:43.420Z",
+          "publicScore": "0.19"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-v22-ash-exact-rerun",
+      "script_version": "324979538",
+      "completed_submissions": 1,
+      "minimum_score": 0.18,
+      "maximum_score": 0.18,
+      "mean_score": 0.18,
+      "submissions": [
+        {
+          "ref": 53422527,
+          "date": "2026-06-06T12:15:22.933Z",
+          "publicScore": "0.18"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-pro-cpu-hybrid65",
+      "script_version": "323360723",
+      "completed_submissions": 1,
+      "minimum_score": 0.18,
+      "maximum_score": 0.18,
+      "mean_score": 0.18,
+      "submissions": [
+        {
+          "ref": 53207380,
+          "date": "2026-05-31T06:43:28.263Z",
+          "publicScore": "0.18"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-forge-v20-high-score",
+      "script_version": "322284775",
+      "completed_submissions": 1,
+      "minimum_score": 0.18,
+      "maximum_score": 0.18,
+      "mean_score": 0.18,
+      "submissions": [
+        {
+          "ref": 53073679,
+          "date": "2026-05-27T05:58:02.827Z",
+          "publicScore": "0.18"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-forge-v20-high-score-cpu",
+      "script_version": "322285691",
+      "completed_submissions": 1,
+      "minimum_score": 0.18,
+      "maximum_score": 0.18,
+      "mean_score": 0.18,
+      "submissions": [
+        {
+          "ref": 53052403,
+          "date": "2026-05-26T13:07:48.437Z",
+          "publicScore": "0.18"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "329546536",
+      "completed_submissions": 1,
+      "minimum_score": 0.17,
+      "maximum_score": 0.17,
+      "mean_score": 0.17,
+      "submissions": [
+        {
+          "ref": 53953161,
+          "date": "2026-06-22T16:35:24.660Z",
+          "publicScore": "0.17"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/forge-arc-agi-3-agent-9461b9",
+      "script_version": "312647279",
+      "completed_submissions": 1,
+      "minimum_score": 0.17,
+      "maximum_score": 0.17,
+      "mean_score": 0.17,
+      "submissions": [
+        {
+          "ref": 51830127,
+          "date": "2026-04-18T16:03:48.383Z",
+          "publicScore": "0.17"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebook66730ab9d7",
+      "script_version": "328004488",
+      "completed_submissions": 1,
+      "minimum_score": 0.16,
+      "maximum_score": 0.16,
+      "mean_score": 0.16,
+      "submissions": [
+        {
+          "ref": 53784856,
+          "date": "2026-06-17T18:25:26.637Z",
+          "publicScore": "0.16"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebookd44a7173db",
+      "script_version": "330376988",
+      "completed_submissions": 1,
+      "minimum_score": 0.14,
+      "maximum_score": 0.14,
+      "mean_score": 0.14,
+      "submissions": [
+        {
+          "ref": 54049906,
+          "date": "2026-06-25T18:32:06.377Z",
+          "publicScore": "0.14"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-v27-graph-h100-plan",
+      "script_version": "328188499",
+      "completed_submissions": 1,
+      "minimum_score": 0.09,
+      "maximum_score": 0.09,
+      "mean_score": 0.09,
+      "submissions": [
+        {
+          "ref": 53798247,
+          "date": "2026-06-18T06:09:24.047Z",
+          "publicScore": "0.09"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-agi-3-omega-planner-balanced",
+      "script_version": "320927293",
+      "completed_submissions": 1,
+      "minimum_score": 0.09,
+      "maximum_score": 0.09,
+      "mean_score": 0.09,
+      "submissions": [
+        {
+          "ref": 52860903,
+          "date": "2026-05-20T18:26:20.443Z",
+          "publicScore": "0.09"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "311617729",
+      "completed_submissions": 1,
+      "minimum_score": 0.09,
+      "maximum_score": 0.09,
+      "mean_score": 0.09,
+      "submissions": [
+        {
+          "ref": 51731211,
+          "date": "2026-04-14T19:50:37.417Z",
+          "publicScore": "0.09"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/0-35-forge-v16-trigger-aware-bfs",
+      "script_version": "309710521",
+      "completed_submissions": 1,
+      "minimum_score": 0.08,
+      "maximum_score": 0.08,
+      "mean_score": 0.08,
+      "submissions": [
+        {
+          "ref": 51557012,
+          "date": "2026-04-07T16:43:13.790Z",
+          "publicScore": "0.08"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/1-scored-0-44",
+      "script_version": "313340076",
+      "completed_submissions": 1,
+      "minimum_score": 0.06,
+      "maximum_score": 0.06,
+      "mean_score": 0.06,
+      "submissions": [
+        {
+          "ref": 51908602,
+          "date": "2026-04-21T12:53:56.040Z",
+          "publicScore": "0.06"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/notebook53118ab276",
+      "script_version": "313911506",
+      "completed_submissions": 1,
+      "minimum_score": 0.04,
+      "maximum_score": 0.04,
+      "mean_score": 0.04,
+      "submissions": [
+        {
+          "ref": 51971139,
+          "date": "2026-04-23T15:24:27.537Z",
+          "publicScore": "0.04"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/arc-agi-3-gpt-oss-120b",
+      "script_version": "331610897",
+      "completed_submissions": 1,
+      "minimum_score": 0.0,
+      "maximum_score": 0.0,
+      "mean_score": 0.0,
+      "submissions": [
+        {
+          "ref": 54209022,
+          "date": "2026-06-30T17:53:06.900Z",
+          "publicScore": "0.00"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/nabidnur/notebook9f4a62bf4a",
+      "script_version": "327378647",
+      "completed_submissions": 1,
+      "minimum_score": 0.0,
+      "maximum_score": 0.0,
+      "mean_score": 0.0,
+      "submissions": [
+        {
+          "ref": 53711068,
+          "date": "2026-06-15T12:47:47.093Z",
+          "publicScore": "0.00"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/ash-s-arc-agi-3-agent",
+      "script_version": "312300527",
+      "completed_submissions": 2,
+      "minimum_score": 0.0,
+      "maximum_score": 0.0,
+      "mean_score": 0.0,
+      "submissions": [
+        {
+          "ref": 51932783,
+          "date": "2026-04-22T10:51:31.007Z",
+          "publicScore": "0.00"
+        },
+        {
+          "ref": 51794273,
+          "date": "2026-04-17T11:00:12.843Z",
+          "publicScore": "0.00"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/notebook6ff98e6ab3",
+      "script_version": "309120686",
+      "completed_submissions": 1,
+      "minimum_score": 0.0,
+      "maximum_score": 0.0,
+      "mean_score": 0.0,
+      "submissions": [
+        {
+          "ref": 51501840,
+          "date": "2026-04-05T08:53:13.967Z",
+          "publicScore": "0.00"
+        }
+      ]
+    },
+    {
+      "kernel_path": "/code/koushikrudra/arc-v1-submission-baki",
+      "script_version": "307881284",
+      "completed_submissions": 1,
+      "minimum_score": 0.0,
+      "maximum_score": 0.0,
+      "mean_score": 0.0,
+      "submissions": [
+        {
+          "ref": 51404682,
+          "date": "2026-04-01T07:50:01.753Z",
+          "publicScore": "0.00"
+        }
+      ]
+    }
+  ],
+  "limitation": "URL scriptVersionId identifies the submitted version; exact bytes and repeated-run RNG are not independently authenticated here. This audit is not a comparison of different code quality."
+}

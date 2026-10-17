@@ -1,0 +1,186 @@
+{
+  "source_benchmark_sha256": "99a379717220dd11e0cbfa9f205a66fbd827d8641344631e829cba0b26617e1d",
+  "scope": "Observed gameplay elapsed time includes gate wait and inference; not HTTP latency",
+  "game_count": 25,
+  "games_with_first_action_after900s": 15,
+  "min_seconds": 19.628814039999725,
+  "median_seconds": 927.6188318509999,
+  "max_seconds": 6876.977467962999,
+  "games": [
+    {
+      "game_id": "sk48-d8078629",
+      "first_inference_backed_action_seconds": 48.386504435000006,
+      "state": "cancelled",
+      "levels_completed": 1,
+      "total_levels": 8
+    },
+    {
+      "game_id": "tn36-ef4dde99",
+      "first_inference_backed_action_seconds": 43.27966674399977,
+      "state": "won",
+      "levels_completed": 7,
+      "total_levels": 7
+    },
+    {
+      "game_id": "m0r0-492f87ba",
+      "first_inference_backed_action_seconds": 25.259313755999756,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "bp35-0a0ad940",
+      "first_inference_backed_action_seconds": 61.1702114589998,
+      "state": "cancelled",
+      "levels_completed": 1,
+      "total_levels": 9
+    },
+    {
+      "game_id": "cn04-2fe56bfb",
+      "first_inference_backed_action_seconds": 30.744734490000155,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "dc22-fdcac232",
+      "first_inference_backed_action_seconds": 36.04181409700004,
+      "state": "cancelled",
+      "levels_completed": 4,
+      "total_levels": 6
+    },
+    {
+      "game_id": "tu93-0768757b",
+      "first_inference_backed_action_seconds": 28.33965504600019,
+      "state": "cancelled",
+      "levels_completed": 8,
+      "total_levels": 9
+    },
+    {
+      "game_id": "lp85-305b61c3",
+      "first_inference_backed_action_seconds": 31.547339661000024,
+      "state": "won",
+      "levels_completed": 8,
+      "total_levels": 8
+    },
+    {
+      "game_id": "ka59-38d34dbb",
+      "first_inference_backed_action_seconds": 2345.7791583619996,
+      "state": "cancelled",
+      "levels_completed": 5,
+      "total_levels": 7
+    },
+    {
+      "game_id": "wa30-ee6fef47",
+      "first_inference_backed_action_seconds": 19.628814039999725,
+      "state": "cancelled",
+      "levels_completed": 1,
+      "total_levels": 9
+    },
+    {
+      "game_id": "vc33-5430563c",
+      "first_inference_backed_action_seconds": 33.588340299000265,
+      "state": "won",
+      "levels_completed": 7,
+      "total_levels": 7
+    },
+    {
+      "game_id": "lf52-271a04aa",
+      "first_inference_backed_action_seconds": 6876.977467962999,
+      "state": "cancelled",
+      "levels_completed": 1,
+      "total_levels": 10
+    },
+    {
+      "game_id": "r11l-495a7899",
+      "first_inference_backed_action_seconds": 912.0437734920001,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "sc25-635fd71a",
+      "first_inference_backed_action_seconds": 916.7972938940002,
+      "state": "cancelled",
+      "levels_completed": 0,
+      "total_levels": 6
+    },
+    {
+      "game_id": "sp80-589a99af",
+      "first_inference_backed_action_seconds": 927.6188318509999,
+      "state": "cancelled",
+      "levels_completed": 3,
+      "total_levels": 6
+    },
+    {
+      "game_id": "ar25-0c556536",
+      "first_inference_backed_action_seconds": 3293.676803313,
+      "state": "won",
+      "levels_completed": 8,
+      "total_levels": 8
+    },
+    {
+      "game_id": "sb26-7fbdac44",
+      "first_inference_backed_action_seconds": 3576.4462868110004,
+      "state": "won",
+      "levels_completed": 8,
+      "total_levels": 8
+    },
+    {
+      "game_id": "cd82-fb555c5d",
+      "first_inference_backed_action_seconds": 1231.4819932670002,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "re86-8af5384d",
+      "first_inference_backed_action_seconds": 3697.362076342,
+      "state": "cancelled",
+      "levels_completed": 5,
+      "total_levels": 8
+    },
+    {
+      "game_id": "s5i5-18d95033",
+      "first_inference_backed_action_seconds": 3818.6980816529995,
+      "state": "cancelled",
+      "levels_completed": 2,
+      "total_levels": 8
+    },
+    {
+      "game_id": "ls20-9607627b",
+      "first_inference_backed_action_seconds": 2809.9529847109998,
+      "state": "cancelled",
+      "levels_completed": 4,
+      "total_levels": 7
+    },
+    {
+      "game_id": "ft09-0d8bbf25",
+      "first_inference_backed_action_seconds": 1305.8314578980003,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "su15-1944f8ab",
+      "first_inference_backed_action_seconds": 5064.8921860400005,
+      "state": "cancelled",
+      "levels_completed": 3,
+      "total_levels": 9
+    },
+    {
+      "game_id": "tr87-cd924810",
+      "first_inference_backed_action_seconds": 1657.7300493719995,
+      "state": "won",
+      "levels_completed": 6,
+      "total_levels": 6
+    },
+    {
+      "game_id": "g50t-5849a774",
+      "first_inference_backed_action_seconds": 3022.5751938789995,
+      "state": "cancelled",
+      "levels_completed": 2,
+      "total_levels": 7
+    }
+  ]
+}

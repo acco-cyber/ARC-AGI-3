@@ -1,0 +1,9 @@
+{
+  "test": "Actual solver cancellation drain expires before worker return",
+  "drain_timeout_test_seconds": 0.01,
+  "production_default_seconds": 120.0,
+  "unbilled_analyzer_tail": 50,
+  "final_tokens_at_forced_finish": 0,
+  "final_tokens_after_worker_finish": 0,
+  "risk_confirmed": true
+}

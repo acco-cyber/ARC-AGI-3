@@ -1,0 +1,23 @@
+{
+  "kernel": "koushikrudra/arc3-arc3-lease2048-diagnostic",
+  "notebook_sha256": "495a0f4b7e187a4b4501343764a4b6724ed86bc618c37ed70f55c5a704ff6473",
+  "timeout_seconds": 2400,
+  "submission_attempted": false,
+  "requested_at_utc": "2026-10-17T06:12:54.072530+00:00",
+  "response": {
+    "versionNumberNullable": 1,
+    "ref": "/code/koushikrudra/arc3-arc3-lease2048-diagnostic",
+    "url": "https://www.kaggle.com/code/koushikrudra/arc3-arc3-lease2048-diagnostic",
+    "versionNumber": 1,
+    "hasVersionNumber": true,
+    "error": "",
+    "hasError": false,
+    "invalidTags": [],
+    "invalidDatasetSources": [],
+    "invalidCompetitionSources": [],
+    "invalidKernelSources": [],
+    "invalidModelSources": [],
+    "kernelId": 139172306
+  },
+  "requested_kernel": "koushikrudra/arc3-lease2048-diagnostic"
+}
